@@ -1,5 +1,5 @@
-# Business Intelligence 1 - BI1 Master PUC-Rio
-## Scripts desenvolvidos durante a disciplina de BI1
+# Business Intelligence 1 - BI_1 Master PUC-Rio
+## Scripts desenvolvidos durante a disciplina de BI_1
 <img width="924" alt="BI_MASTER_2021_1" src="https://user-images.githubusercontent.com/7377875/132598490-a41fe6b3-8e46-4bf9-ae2f-4b43ede0182a.PNG"></img>
 ### Índice
   
