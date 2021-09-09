@@ -3,120 +3,92 @@
 <img width="924" alt="BI_MASTER_2021_1" src="https://user-images.githubusercontent.com/7377875/132598490-a41fe6b3-8e46-4bf9-ae2f-4b43ede0182a.PNG"></img>
 ### Índice
   
-- [Análise Exploratória](#analise-exploratoria)
-- [Pré processamento](#pre-processamento)
-- [Classificação](#classificacao)
-- [Associação](#associação)
-- [Projeto_BI1](#projeto)
-
-<h2 id="analise-exploratoria">
-  
-[Análise Exploratória](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/01_An%C3%A1liseExplorat%C3%B3ria)
-  
-</h2>
-
-  - **Mushrooms:** Entendimento e classificação de uma base de cogumelos [`mushrooms.ipynb`](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/01_An%C3%A1liseExplorat%C3%B3ria/mushroom.ipynb). A base é composta por amostras de 23 espécies de cogumelos. Cada espécie é identificada como definitivamente comestível, definitivamente venenosa, ou de consumo desconhecido e não recomendado. Esta última classe foi combinada com a venenosa. O guia (de onde foram retiradas as características dos cogumelos) afirma claramente que não existe uma regra simples para determinar a comestibilidade de um cogumelo.
-    - Gráficos analisados
-      - Boxplots
-      - Gráficos de dispersão
-      - Gráficos de barras
-      - Histogramas
-      - entre outros
-    - Inferência
-      - Árvore de decisão (classificação)
-      
-  - **Iris:** Entendimento e classificação de uma base de flores [`iris.ipynb`](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/01_An%C3%A1liseExplorat%C3%B3ria/iris.ipynb). Base com 150 registros, 4 atributos (largura e comprimento da pétala e da sépala) e 3 classes (setosa, virginica e versicolor). A ideia é fazer uma análise exploratória dos dados e posteriormente criar um classificador que consiga inferir a espécie de uma flor baseado nas dimensões da pétala e da sépala.
-    - Gráficos analisados
-      - Parallel Plot
-      - Deviation Plot
-      - Andrews Curves
-      - Pie Plot
-      - Boxplots
-      - Gráficos de dispersão
-      - Gráficos de barras
-      - Histogramas
-      - entre outros
-    - Inferência
-      - Árvore de decisão (classificação)
-
-
-<h2 id="pre-processamento">
-  
-[Pré processamento](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/02_Pr%C3%A9Processamento)
-  
-</h2>
-
-  - **Secom:** Entendimento, pré processamento e classificação de uma base de um processo de fabricação de semi-condutores [`Secom.ipynb`](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/02_Pr%C3%A9Processamento/Secom.ipynb). Um complexo processo de fabricação de semi-condutores moderno é normalmente feito sob vigilância consistente através do monitoramento de sinais, variáveis coletadas de sensores e pontos de medição de processo. No entanto, nem todos estes sinais são igualmente valiosos num sistema de monitoramento específico. Os sinais medidos contêm uma combinação de informações úteis, informações irrelevantes, bem como ruído. Engenheiros tipicamente têm um número muito maior de sinais do que são realmente necessários. Se considerarmos cada tipo de sinal como uma característica, então a seleção da característica pode ser aplicada para identificar os sinais mais relevantes. Os Engenheiros de Processo podem então usar estes sinais para determinar os fatores chave para o processo de produção. Isso poderá trazer benefícios para o processo, como redução do tempo e diminuição nos custos de produção.
-  
-    - Gráficos e medidas resumo para análise exploratória      
-    - Pré processamento
-      - Tratamento de missing
-      - Remoção de atributos com variância zero
-      - Balanceamento da base de dados
-      - Normalização
-      - PCA
-    - Inferência
-      - SVM (classificação)
-
-<h2 id="classificacao">
-  
-[Classificação](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/03_Classifica%C3%A7%C3%A3o)
-  
-</h2>
-
- - **Análise de Crédito Bancário:** Entendimento, pré processamento e classificação de uma base de análise de crédito [`Secom.ipynb`](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/03_Classifica%C3%A7%C3%A3o/Secom.ipynb). A base de dados contém 2077 exemplos de créditos concedidos ou não. Possui 11 atributos de entrada e 2 classes de saída. A saída indica se o cliente pagou o empréstimo (=1) ou se não pagou (=0). 
- 
-    - Medidas resumo para análise exploratória      
-    - Pré processamento
-      - Normalização
-    - Inferência (classificação)
-      - SVM
-      - Árvore de Decisão
-      - Random Forest
-    - Tuning de hiperparâmetros
-      - GridSearch
-
-
- - **Câncer de Mama:** Entendimento, pré processamento e classificação de uma base de análise de crédito [`Credito_SVM.ipynb`](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/03_Classifica%C3%A7%C3%A3o/Credito_SVM.ipynb), [`Credito_AD.ipynb`](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/03_Classifica%C3%A7%C3%A3o/Credito_AD.ipynb) e [`Credito_RF.ipynb`](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/03_Classifica%C3%A7%C3%A3o/Credito_RF.ipynb). Base de dados de características de tumores de mama, como raio, textura, perímetro e área do tumor, totalizando 30 atributos. A base consite em 569 registros de tumores (357 benignas e 212 malignas).
- 
-    - Medidas resumo para análise exploratória      
-    - Pré processamento
-      - Normalização
-    - Inferência (classificação)
-      - KNN
-      - Regressão Logística
-    - Tuning de hiperparâmetros
-      - GridSearch
-    - Pós procecssamento
-      - Análise das confianças nas inferências para tornar a inferência mais conservadora, ou seja, evitar classificar um tumor maligno como benigno (o pior caso de erro).
-
-
-<h2 id="associacao">
-  
-[Associação](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/04_Associa%C3%A7%C3%A3o)
-  
-</h2>
-
- - **Transações em um mercado francês:** Entendimento, pré processamento e associação de itens de um mercado utilizando o algoritmo Apriori [`Market_Apriori.ipynb`](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/04_Associa%C3%A7%C3%A3o/Market_Apriori.ipynb) e o FP-Growth [`Market_FPGrowth.ipynb`](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/04_Associa%C3%A7%C3%A3o/Market_FPGrowth.ipynb). Lista de transações (compras) em um mercado francês: Cada linha da base é uma transação; Cada transação tem de 1 a N itens; Existem 119 produtos diferentes no mercado; Base tem 7501 transações feitas no decorrer de 1 semana.
- 
-    - Pré processamento
-      - Transformação de transações em uma matriz esparsa
-    - Inferência (classificação)
-      - Apriori
-      - FP-Growth
-    - Pós processamento
-      - Geração de regras a partir de conjuntos de itens frequentes
+- [Projeto](#projeto)
 
 <h2 id="projeto">
   
-[Projeto_BI](https://github.com/marciodelrei/BIMaster_BusinessIntelligence/tree/main/Projeto_BI_1)
+[Projeto_BI](https://github.com/marciodelrei/BIMaster_BusinessIntelligence/tree/main/Projeto)
   
 </h2>
 
- - **Projeto final da disciplina de Business Intelligence 1: Estudo de Caso: Sobrevivência de Cavalos Doentes** - Neste estudo de caso, discutimos métodos de Machine Learning aplicados à base de dados “horse.csv” com objetivo de prever se um cavalo pode sobreviver ou não com base em condições médicas anteriores. A base de dados dispõe de 299 registros e 27 atributos, sendo 1 de classificação. O código na íntegra encontra-se no notebook do Jupyter: [`Projeto_DM.ipynb`](https://github.com/marciodelrei/BIMaster_DataMining/tree/main/Projeto_DM/Projeto_DM.ipynb).
-   
-    - Integrantes:
-      - José Leonel Majewski
-      - Laís Moureira dos Santos
-      - Márcio Palma d’El-Rei Pinto
+ - **Projeto final da disciplina de Business Intelligence 1: : [`Projeto`](https://github.com/marciodelrei/BIMaster_BusinessIntelligence/tree/main/Projeto).
+     - Integrantes:
+         - José Leonel Majewski
+         - Laís Moureira dos Santos
+         - Márcio Palma d’El-Rei Pinto
 
+ 01/08/2021
+
+Passo a passo para execução do Projeto:
+
+Colocar a pasta Projeto_BI no C:\.
+
+É necessário ter instalado os softwares:
+	- Postgres 12 ou superior com PgAdmin (Postgres 13.3 - https://www.enterprisedb.com/postgresql-tutorial-resources-training?cid=437);
+	- Pentaho PDI 9.1 (https://sourceforge.net/projects/pentaho/files/latest/download);
+	- Power BI Desktop Julho/2021 (https://www.microsoft.com/pt-br/download/confirmation.aspx?id=58494)
+
+Desejável possui o software SQL Power Architect para visualização do modelo dimensional: "..\anexos\modelo_dimensional\Modelo_dimensional.architect"
+
+1 - Criar o Database no Postgres com o nome projeto_covid19;
+
+2 - Executar o script "..\anexos\script_bd\dw_covid19.sql"
+	Criará o BD físico do DW e uma tabela para apoio do ETL, em schemas diferentes: "dw_covid19" e "pre_dw_covid19"
+	
+3 - A partir deste ponto, pode-se escolher 4 formas de se criar o DW:
+	3.1 - Atualiza o DW em tempo de execução. Executar separadamente e na ordem as transformações abaixo, diretamente do Pentaho PDI
+		- "..\ktr\00_Extracao_CSV_Github.ktr"
+		- "..\ktr\01_ETL1_Pre_DW.ktr"
+		- "..\ktr\02_Carga_DW.ktr"
+	ou;
+		
+	3.2 - Atualiza o DW em tempo de execução. Executar o Job do Pentaho PDI "..\ktr\Covid19_job.kjb", onde já estão encadeadas as transformações
+	do item 3.1 ou;
+	
+	3.3 - Atualiza o DW em tempo de execução. Executar o arquivo bat "..\ktr\job.bat" diretamente do prompt do DOS, externamente ao Pentaho PDI ou;
+	
+	3.4 - Atualiza o DW em dia e hora específicos. Criar agendamento no windows para executar o aquivo bat do item 3.3 em horário definido para
+	que se faça	todo o processo automaticamente sem interação humana. Para facilitar este agendamento, pode-se importar o arquivo
+	"..\anexos\schedule_windows\ProjetoBI_COVID19 (TaskWindows).xml", diretamente no agendador do Windows (talvez seja necessário atulizar o
+	usuário proprietário da task). 
+	
+	Todas as etapas atualizam o DW de forma dinâmica atualizando o Dashboard desenvolvido no Power BI.
+	
+4 - Abrir o arquivo "..\bi\projeto_covid19.pbix" no Power BI Desktop e clicar em Atualizar para ver os gráficos atualizados de acordo com uma das
+	opções do item 3.
+
+5 - Estrutura dos arquivos do projeto:
+C:\Projeto_BI
+	|   
+	+---anexos
+	|   |   README.txt
+	|   |   
+	|   +---dicionario_dados_stage_owid
+	|   |       dicionario_dados.pdf
+	|   |       owid-covid-data_TEMPLATE.csv
+	|   |       
+	|   +---modelo_dimensional
+	|   |       Modelo_dimensional.architect
+	|   |       
+	|   +---schedule_windows
+	|   |       ProjetoBI_COVID19 (TaskWindows).xml
+	|   |       
+	|   \---script_bd
+	|           dw_covid19.sql
+	|           
+	+---bi
+	|       projeto_covid19.pbix
+	|       
+	+---ktr
+	|       00_Extracao_CSV_Github.ktr
+	|       01_ETL1_Pre_DW.ktr
+	|       02_Carga_DW.ktr
+	|       Covid19_job.kjb
+	|       job.bat
+	|       log.txt
+	|       
+	+---logs
+	|       covid19.log
+	|       
+	\---stage
+			owid-covid-data.csv
