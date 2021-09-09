@@ -1,0 +1,1155 @@
+ 
+ 
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre1.8.0_291
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre1.8.0_291\bin\java.exe
+
+C:\Pentaho\data-integration>"C:\Program Files\Java\jre1.8.0_291\bin\java.exe"  "-Xms1024m" "-Xmx2048m" "-XX:MaxPermSize=256m" "-Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-7.1.0.0-12.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen -initialDir "C:\WINDOWS\system32"\ /file:"C:\Projeto_BI\ktr\Covid19_job.kjb" /level:Basic 
+23:50:03,372 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+23:50:11,668 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 1 at C:\Pentaho\data-integration\.\system\karaf\ ***
+***   caches\kitchen\data-1                                                 ***
+*** FastBin Provider Port:52901                                             ***
+*** Karaf Port:8802                                                         ***
+*** OSGI Service Port:9051                                                  ***
+*******************************************************************************
+2021/07/24 23:50:13 - Kitchen - Logging is at level : Log básico
+2021/07/24 23:50:13 - Kitchen - Start of run.
+2021/07/24 23:50:25 - Covid19_job - Início da execução do job
+2021/07/24 23:50:25 - Covid19_job - Starting entry [Step 0 - Get CSV]
+2021/07/24 23:50:25 - Step 0 - Get CSV - Loading transformation from XML file [file:///C:/Projeto_BI/ktr/00_Extracao_CSV_Github.ktr]
+2021/07/24 23:50:25 - Step 0 - Get CSV - Using run configuration [Pentaho local]
+2021/07/24 23:50:25 - Step 0 - Get CSV - Using legacy execution engine
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Expedindo in?cio para transforma??o [00Extracao_CSV_Github]
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Nr de argumentos detectados:0 
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Esta n?o ? uma repeti??o de transforma??o
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Foram encotrados 4 steps diferentes para executar.
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Alocando rowsets...
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Alocando rowsets para o step 0 --> HTTP Client
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Transforma??o alocou novo rowset [HTTP Client.0 - Text file output.0]
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Foram alocados 1 rowsets por step 0 --> HTTP Client  
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Alocando rowsets para o step 1 --> Text file output
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Transforma??o alocou novo rowset [Text file output.0 - Block this step until steps finish.0]
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Foram alocados 2 rowsets por step 1 --> Text file output  
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Alocando rowsets para o step 2 --> Block this step until steps finish
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Foram alocados 2 rowsets por step 2 --> Block this step until steps finish  
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Alocando rowsets para o step 3 --> Dummy de entrada (WORKAROUND)
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Transforma??o alocou novo rowset [Dummy de entrada (WORKAROUND).0 - HTTP Client.0]
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Foram alocados 3 rowsets por step 3 --> Dummy de entrada (WORKAROUND)  
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Alocando Steps & StepData...
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [HTTP Client] do tipe [HTTP]
+2021/07/24 23:50:25 - HTTP Client.0 - distribution activated
+2021/07/24 23:50:25 - HTTP Client.0 - Starting allocation of buffers & new threads...
+2021/07/24 23:50:25 - HTTP Client.0 - Step info: nrinput=1 nroutput=1
+2021/07/24 23:50:25 - HTTP Client.0 - Got previous step from [HTTP Client] #0 --> Dummy de entrada (WORKAROUND)
+2021/07/24 23:50:25 - HTTP Client.0 - input rel is 1:1
+2021/07/24 23:50:25 - HTTP Client.0 - Found input rowset [Dummy de entrada (WORKAROUND).0 - HTTP Client.0]
+2021/07/24 23:50:25 - HTTP Client.0 - output rel. is  1:1
+2021/07/24 23:50:25 - HTTP Client.0 - Found output rowset [HTTP Client.0 - Text file output.0]
+2021/07/24 23:50:25 - HTTP Client.0 - Finished dispatching
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [HTTP Client].0
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [Text file output] do tipe [TextFileOutput]
+2021/07/24 23:50:25 - Text file output.0 - distribution activated
+2021/07/24 23:50:25 - Text file output.0 - Starting allocation of buffers & new threads...
+2021/07/24 23:50:25 - Text file output.0 - Step info: nrinput=1 nroutput=1
+2021/07/24 23:50:25 - Text file output.0 - Got previous step from [Text file output] #0 --> HTTP Client
+2021/07/24 23:50:25 - Text file output.0 - input rel is 1:1
+2021/07/24 23:50:25 - Text file output.0 - Found input rowset [HTTP Client.0 - Text file output.0]
+2021/07/24 23:50:25 - Text file output.0 - output rel. is  1:1
+2021/07/24 23:50:25 - Text file output.0 - Found output rowset [Text file output.0 - Block this step until steps finish.0]
+2021/07/24 23:50:25 - Text file output.0 - Finished dispatching
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [Text file output].0
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [Block this step until steps finish] do tipe [BlockUntilStepsFinish]
+2021/07/24 23:50:25 - Block this step until steps finish.0 - distribution activated
+2021/07/24 23:50:25 - Block this step until steps finish.0 - Starting allocation of buffers & new threads...
+2021/07/24 23:50:25 - Block this step until steps finish.0 - Step info: nrinput=1 nroutput=0
+2021/07/24 23:50:25 - Block this step until steps finish.0 - Got previous step from [Block this step until steps finish] #0 --> Text file output
+2021/07/24 23:50:25 - Block this step until steps finish.0 - input rel is 1:1
+2021/07/24 23:50:25 - Block this step until steps finish.0 - Found input rowset [Text file output.0 - Block this step until steps finish.0]
+2021/07/24 23:50:25 - Block this step until steps finish.0 - Finished dispatching
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [Block this step until steps finish].0
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [Dummy de entrada (WORKAROUND)] do tipe [DataGrid]
+2021/07/24 23:50:25 - Dummy de entrada (WORKAROUND).0 - distribution activated
+2021/07/24 23:50:25 - Dummy de entrada (WORKAROUND).0 - Starting allocation of buffers & new threads...
+2021/07/24 23:50:25 - Dummy de entrada (WORKAROUND).0 - Step info: nrinput=0 nroutput=1
+2021/07/24 23:50:25 - Dummy de entrada (WORKAROUND).0 - output rel. is  1:1
+2021/07/24 23:50:25 - Dummy de entrada (WORKAROUND).0 - Found output rowset [Dummy de entrada (WORKAROUND).0 - HTTP Client.0]
+2021/07/24 23:50:25 - Dummy de entrada (WORKAROUND).0 - Finished dispatching
+2021/07/24 23:50:25 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [Dummy de entrada (WORKAROUND)].0
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Esta transforma??o pode ser repetida com a data de repeti??o : 2021/07/24 23:50:25
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Inicializando 4 steps...
+2021/07/24 23:50:25 - HTTP Client.0 - Released server socket on port 0
+2021/07/24 23:50:25 - Dummy de entrada (WORKAROUND).0 - Released server socket on port 0
+2021/07/24 23:50:25 - Block this step until steps finish.0 - Released server socket on port 0
+2021/07/24 23:50:25 - Text file output.0 - Released server socket on port 0
+2021/07/24 23:50:25 - Text file output.0 - Parent folder exists [file:///C:/Projeto_BI/data]!
+2021/07/24 23:50:25 - Text file output.0 - Opening output stream using provider: None
+2021/07/24 23:50:25 - Text file output.0 - Opening output stream in encoding: UTF-8
+2021/07/24 23:50:25 - Text file output.0 - Opened new file with name [file:///C:/Projeto_BI/data/owid-covid-data.csv]
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Step [HTTP Client.0] inicializado sem falhas.
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Step [Text file output.0] inicializado sem falhas.
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Step [Block this step until steps finish.0] inicializado sem falhas.
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Step [Dummy de entrada (WORKAROUND).0] inicializado sem falhas.
+2021/07/24 23:50:25 - HTTP Client.0 - Iniciando execução...
+2021/07/24 23:50:25 - Text file output.0 - Iniciando execução...
+2021/07/24 23:50:25 - Block this step until steps finish.0 - Iniciando execução...
+2021/07/24 23:50:25 - Dummy de entrada (WORKAROUND).0 - Iniciando execução...
+2021/07/24 23:50:25 - 00Extracao_CSV_Github - Transforma??o alocou 4 threads e 3 rowsets.
+2021/07/24 23:50:25 - Dummy de entrada (WORKAROUND).0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2021/07/24 23:50:25 - HTTP Client.0 - Connecting to : [https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv]
+2021/07/24 23:50:27 - HTTP Client.0 - Response time (milliseconds): [1988] for [https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv]
+2021/07/24 23:50:35 - HTTP Client.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2021/07/24 23:50:35 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2021/07/24 23:50:35 - Block this step until steps finish.0 - Finished running step [Text file output(0)].
+2021/07/24 23:50:35 - Block this step until steps finish.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2021/07/24 23:50:35 - Covid19_job - Starting entry [Step 1 - ETL e Criacao da Stage]
+2021/07/24 23:50:35 - Step 1 - ETL e Criacao da Stage - Loading transformation from XML file [file:///C:/Projeto_BI/ktr/01_etl1.ktr]
+2021/07/24 23:50:35 - Step 1 - ETL e Criacao da Stage - Using run configuration [Pentaho local]
+2021/07/24 23:50:35 - Step 1 - ETL e Criacao da Stage - Using legacy execution engine
+2021/07/24 23:50:35 - etl1_continentes - Expedindo in?cio para transforma??o [etl1_continentes]
+2021/07/24 23:50:35 - etl1_continentes - Nr de argumentos detectados:0 
+2021/07/24 23:50:35 - etl1_continentes - Esta n?o ? uma repeti??o de transforma??o
+2021/07/24 23:50:35 - etl1_continentes - Foram encotrados 8 steps diferentes para executar.
+2021/07/24 23:50:35 - etl1_continentes - Alocando rowsets...
+2021/07/24 23:50:35 - etl1_continentes -  Alocando rowsets para o step 0 --> Leitura owid-covid-data
+2021/07/24 23:50:35 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/24 23:50:35 - etl1_continentes - Transforma??o alocou novo rowset [Leitura owid-covid-data.0 - Seleção de colunas a ser utilizada.0]
+2021/07/24 23:50:35 - etl1_continentes -  Foram alocados 1 rowsets por step 0 --> Leitura owid-covid-data  
+2021/07/24 23:50:35 - etl1_continentes -  Alocando rowsets para o step 1 --> Seleção de colunas a ser utilizada
+2021/07/24 23:50:35 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/24 23:50:35 - etl1_continentes - Transforma??o alocou novo rowset [Seleção de colunas a ser utilizada.0 - Filter rows.0]
+2021/07/24 23:50:35 - etl1_continentes -  Foram alocados 2 rowsets por step 1 --> Seleção de colunas a ser utilizada  
+2021/07/24 23:50:35 - etl1_continentes -  Alocando rowsets para o step 2 --> Renomeando atributos
+2021/07/24 23:50:35 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/24 23:50:35 - etl1_continentes - Transforma??o alocou novo rowset [Renomeando atributos.0 - Traducao paises.0]
+2021/07/24 23:50:35 - etl1_continentes -  Foram alocados 3 rowsets por step 2 --> Renomeando atributos  
+2021/07/24 23:50:35 - etl1_continentes -  Alocando rowsets para o step 3 --> Traducao paises
+2021/07/24 23:50:35 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/24 23:50:35 - etl1_continentes - Transforma??o alocou novo rowset [Traducao paises.0 - Traducao continentes.0]
+2021/07/24 23:50:35 - etl1_continentes -  Foram alocados 4 rowsets por step 3 --> Traducao paises  
+2021/07/24 23:50:35 - etl1_continentes -  Alocando rowsets para o step 4 --> Trata  metricas nulas
+2021/07/24 23:50:35 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/24 23:50:35 - etl1_continentes - Transforma??o alocou novo rowset [Trata  metricas nulas.0 - Gera SQL na stage.0]
+2021/07/24 23:50:35 - etl1_continentes -  Foram alocados 5 rowsets por step 4 --> Trata  metricas nulas  
+2021/07/24 23:50:35 - etl1_continentes -  Alocando rowsets para o step 5 --> Gera SQL na stage
+2021/07/24 23:50:35 - etl1_continentes -  Foram alocados 5 rowsets por step 5 --> Gera SQL na stage  
+2021/07/24 23:50:35 - etl1_continentes -  Alocando rowsets para o step 6 --> Traducao continentes
+2021/07/24 23:50:35 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/24 23:50:35 - etl1_continentes - Transforma??o alocou novo rowset [Traducao continentes.0 - Trata  metricas nulas.0]
+2021/07/24 23:50:35 - etl1_continentes -  Foram alocados 6 rowsets por step 6 --> Traducao continentes  
+2021/07/24 23:50:35 - etl1_continentes -  Alocando rowsets para o step 7 --> Filter rows
+2021/07/24 23:50:35 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/24 23:50:35 - etl1_continentes - Transforma??o alocou novo rowset [Filter rows.0 - Renomeando atributos.0]
+2021/07/24 23:50:35 - etl1_continentes -  Foram alocados 7 rowsets por step 7 --> Filter rows  
+2021/07/24 23:50:35 - etl1_continentes - Alocando Steps & StepData...
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o ir? alocar o step [Leitura owid-covid-data] do tipe [CsvInput]
+2021/07/24 23:50:35 - Leitura owid-covid-data.0 - distribution activated
+2021/07/24 23:50:35 - Leitura owid-covid-data.0 - Starting allocation of buffers & new threads...
+2021/07/24 23:50:35 - Leitura owid-covid-data.0 - Step info: nrinput=0 nroutput=1
+2021/07/24 23:50:35 - Leitura owid-covid-data.0 - output rel. is  1:1
+2021/07/24 23:50:35 - Leitura owid-covid-data.0 - Found output rowset [Leitura owid-covid-data.0 - Seleção de colunas a ser utilizada.0]
+2021/07/24 23:50:35 - Leitura owid-covid-data.0 - Finished dispatching
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o alocou um novo step: [Leitura owid-covid-data].0
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o ir? alocar o step [Seleção de colunas a ser utilizada] do tipe [SelectValues]
+2021/07/24 23:50:35 - Seleção de colunas a ser utilizada.0 - distribution activated
+2021/07/24 23:50:35 - Seleção de colunas a ser utilizada.0 - Starting allocation of buffers & new threads...
+2021/07/24 23:50:35 - Seleção de colunas a ser utilizada.0 - Step info: nrinput=1 nroutput=1
+2021/07/24 23:50:35 - Seleção de colunas a ser utilizada.0 - Got previous step from [Seleção de colunas a ser utilizada] #0 --> Leitura owid-covid-data
+2021/07/24 23:50:35 - Seleção de colunas a ser utilizada.0 - input rel is 1:1
+2021/07/24 23:50:35 - Seleção de colunas a ser utilizada.0 - Found input rowset [Leitura owid-covid-data.0 - Seleção de colunas a ser utilizada.0]
+2021/07/24 23:50:35 - Seleção de colunas a ser utilizada.0 - output rel. is  1:1
+2021/07/24 23:50:35 - Seleção de colunas a ser utilizada.0 - Found output rowset [Seleção de colunas a ser utilizada.0 - Filter rows.0]
+2021/07/24 23:50:35 - Seleção de colunas a ser utilizada.0 - Finished dispatching
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o alocou um novo step: [Seleção de colunas a ser utilizada].0
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o ir? alocar o step [Renomeando atributos] do tipe [SelectValues]
+2021/07/24 23:50:35 - Renomeando atributos.0 - distribution activated
+2021/07/24 23:50:35 - Renomeando atributos.0 - Starting allocation of buffers & new threads...
+2021/07/24 23:50:35 - Renomeando atributos.0 - Step info: nrinput=1 nroutput=1
+2021/07/24 23:50:35 - Renomeando atributos.0 - Got previous step from [Renomeando atributos] #0 --> Filter rows
+2021/07/24 23:50:35 - Renomeando atributos.0 - input rel is 1:1
+2021/07/24 23:50:35 - Renomeando atributos.0 - Found input rowset [Filter rows.0 - Renomeando atributos.0]
+2021/07/24 23:50:35 - Renomeando atributos.0 - output rel. is  1:1
+2021/07/24 23:50:35 - Renomeando atributos.0 - Found output rowset [Renomeando atributos.0 - Traducao paises.0]
+2021/07/24 23:50:35 - Renomeando atributos.0 - Finished dispatching
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o alocou um novo step: [Renomeando atributos].0
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o ir? alocar o step [Traducao paises] do tipe [ValueMapper]
+2021/07/24 23:50:35 - Traducao paises.0 - distribution de-activated
+2021/07/24 23:50:35 - Traducao paises.0 - Starting allocation of buffers & new threads...
+2021/07/24 23:50:35 - Traducao paises.0 - Step info: nrinput=1 nroutput=1
+2021/07/24 23:50:35 - Traducao paises.0 - Got previous step from [Traducao paises] #0 --> Renomeando atributos
+2021/07/24 23:50:35 - Traducao paises.0 - input rel is 1:1
+2021/07/24 23:50:35 - Traducao paises.0 - Found input rowset [Renomeando atributos.0 - Traducao paises.0]
+2021/07/24 23:50:35 - Traducao paises.0 - output rel. is  1:1
+2021/07/24 23:50:35 - Traducao paises.0 - Found output rowset [Traducao paises.0 - Traducao continentes.0]
+2021/07/24 23:50:35 - Traducao paises.0 - Finished dispatching
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o alocou um novo step: [Traducao paises].0
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o ir? alocar o step [Trata  metricas nulas] do tipe [IfNull]
+2021/07/24 23:50:35 - Trata  metricas nulas.0 - distribution activated
+2021/07/24 23:50:35 - Trata  metricas nulas.0 - Starting allocation of buffers & new threads...
+2021/07/24 23:50:35 - Trata  metricas nulas.0 - Step info: nrinput=1 nroutput=1
+2021/07/24 23:50:35 - Trata  metricas nulas.0 - Got previous step from [Trata  metricas nulas] #0 --> Traducao continentes
+2021/07/24 23:50:35 - Trata  metricas nulas.0 - input rel is 1:1
+2021/07/24 23:50:35 - Trata  metricas nulas.0 - Found input rowset [Traducao continentes.0 - Trata  metricas nulas.0]
+2021/07/24 23:50:35 - Trata  metricas nulas.0 - output rel. is  1:1
+2021/07/24 23:50:35 - Trata  metricas nulas.0 - Found output rowset [Trata  metricas nulas.0 - Gera SQL na stage.0]
+2021/07/24 23:50:35 - Trata  metricas nulas.0 - Finished dispatching
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o alocou um novo step: [Trata  metricas nulas].0
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o ir? alocar o step [Gera SQL na stage] do tipe [TableOutput]
+2021/07/24 23:50:35 - Gera SQL na stage.0 - distribution activated
+2021/07/24 23:50:35 - Gera SQL na stage.0 - Starting allocation of buffers & new threads...
+2021/07/24 23:50:35 - Gera SQL na stage.0 - Step info: nrinput=1 nroutput=0
+2021/07/24 23:50:35 - Gera SQL na stage.0 - Got previous step from [Gera SQL na stage] #0 --> Trata  metricas nulas
+2021/07/24 23:50:35 - Gera SQL na stage.0 - input rel is 1:1
+2021/07/24 23:50:35 - Gera SQL na stage.0 - Found input rowset [Trata  metricas nulas.0 - Gera SQL na stage.0]
+2021/07/24 23:50:35 - Gera SQL na stage.0 - Finished dispatching
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o alocou um novo step: [Gera SQL na stage].0
+2021/07/24 23:50:35 - etl1_continentes -  Transforma??o ir? alocar o step [Traducao continentes] do tipe [ValueMapper]
+2021/07/24 23:50:35 - Traducao continentes.0 - distribution activated
+2021/07/24 23:50:35 - Traducao continentes.0 - Starting allocation of buffers & new threads...
+2021/07/24 23:50:35 - Traducao continentes.0 - Step info: nrinput=1 nroutput=1
+2021/07/24 23:50:36 - Traducao continentes.0 - Got previous step from [Traducao continentes] #0 --> Traducao paises
+2021/07/24 23:50:36 - Traducao continentes.0 - input rel is 1:1
+2021/07/24 23:50:36 - Traducao continentes.0 - Found input rowset [Traducao paises.0 - Traducao continentes.0]
+2021/07/24 23:50:36 - Traducao continentes.0 - output rel. is  1:1
+2021/07/24 23:50:36 - Traducao continentes.0 - Found output rowset [Traducao continentes.0 - Trata  metricas nulas.0]
+2021/07/24 23:50:36 - Traducao continentes.0 - Finished dispatching
+2021/07/24 23:50:36 - etl1_continentes -  Transforma??o alocou um novo step: [Traducao continentes].0
+2021/07/24 23:50:36 - etl1_continentes -  Transforma??o ir? alocar o step [Filter rows] do tipe [FilterRows]
+2021/07/24 23:50:36 - Filter rows.0 - distribution activated
+2021/07/24 23:50:36 - Filter rows.0 - Starting allocation of buffers & new threads...
+2021/07/24 23:50:36 - Filter rows.0 - Step info: nrinput=1 nroutput=1
+2021/07/24 23:50:36 - Filter rows.0 - Got previous step from [Filter rows] #0 --> Seleção de colunas a ser utilizada
+2021/07/24 23:50:36 - Filter rows.0 - input rel is 1:1
+2021/07/24 23:50:36 - Filter rows.0 - Found input rowset [Seleção de colunas a ser utilizada.0 - Filter rows.0]
+2021/07/24 23:50:36 - Filter rows.0 - output rel. is  1:1
+2021/07/24 23:50:36 - Filter rows.0 - Found output rowset [Filter rows.0 - Renomeando atributos.0]
+2021/07/24 23:50:36 - Filter rows.0 - Finished dispatching
+2021/07/24 23:50:36 - etl1_continentes -  Transforma??o alocou um novo step: [Filter rows].0
+2021/07/24 23:50:36 - etl1_continentes - Esta transforma??o pode ser repetida com a data de repeti??o : 2021/07/24 23:50:36
+2021/07/24 23:50:36 - etl1_continentes - Inicializando 8 steps...
+2021/07/24 23:50:36 - Traducao paises.0 - Released server socket on port 0
+2021/07/24 23:50:36 - Leitura owid-covid-data.0 - Released server socket on port 0
+2021/07/24 23:50:36 - Seleção de colunas a ser utilizada.0 - Released server socket on port 0
+2021/07/24 23:50:36 - Filter rows.0 - Released server socket on port 0
+2021/07/24 23:50:36 - Renomeando atributos.0 - Released server socket on port 0
+2021/07/24 23:50:36 - Trata  metricas nulas.0 - Released server socket on port 0
+2021/07/24 23:50:36 - Gera SQL na stage.0 - Released server socket on port 0
+2021/07/24 23:50:36 - Traducao continentes.0 - Released server socket on port 0
+2021/07/24 23:50:36 - projeto - New database connection defined
+2021/07/24 23:50:36 - Gera SQL na stage.0 - Connected to database [projeto] (commit=1000)
+2021/07/24 23:50:36 - projeto - Auto commit off
+2021/07/24 23:50:36 - etl1_continentes - Step [Leitura owid-covid-data.0] inicializado sem falhas.
+2021/07/24 23:50:36 - etl1_continentes - Step [Seleção de colunas a ser utilizada.0] inicializado sem falhas.
+2021/07/24 23:50:36 - etl1_continentes - Step [Renomeando atributos.0] inicializado sem falhas.
+2021/07/24 23:50:36 - etl1_continentes - Step [Traducao paises.0] inicializado sem falhas.
+2021/07/24 23:50:36 - etl1_continentes - Step [Trata  metricas nulas.0] inicializado sem falhas.
+2021/07/24 23:50:36 - etl1_continentes - Step [Gera SQL na stage.0] inicializado sem falhas.
+2021/07/24 23:50:36 - etl1_continentes - Step [Traducao continentes.0] inicializado sem falhas.
+2021/07/24 23:50:36 - etl1_continentes - Step [Filter rows.0] inicializado sem falhas.
+2021/07/24 23:50:36 - Leitura owid-covid-data.0 - Iniciando execução...
+2021/07/24 23:50:36 - Seleção de colunas a ser utilizada.0 - Iniciando execução...
+2021/07/24 23:50:36 - Renomeando atributos.0 - Iniciando execução...
+2021/07/24 23:50:36 - Trata  metricas nulas.0 - Iniciando execução...
+2021/07/24 23:50:36 - Traducao paises.0 - Iniciando execução...
+2021/07/24 23:50:36 - Gera SQL na stage.0 - Iniciando execução...
+2021/07/24 23:50:36 - Traducao continentes.0 - Iniciando execução...
+2021/07/24 23:50:36 - Filter rows.0 - Iniciando execução...
+2021/07/24 23:50:36 - etl1_continentes - Transforma??o alocou 8 threads e 7 rowsets.
+2021/07/24 23:50:36 - Leitura owid-covid-data.0 - Header row skipped in file 'C:\Projeto_BI\data\owid-covid-data.csv'
+2021/07/24 23:50:36 - Gera SQL na stage.0 - Prepared statement : INSERT INTO stg_covid.dados_gerais (nk_local, nm_continente, nm_pais, nk_data, med_total_mortes, med_novas_mortes, med_total_mortes_por_milhao, med_novas_mortes_por_milhao, med_pessoas_vacinadas, med_pessoas_totalmente_vacinadas, med_pessoas_vacinadas_por_100, med_pessoas_totalmente_vacinadas_por_cem, nr_populacao) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2021/07/24 23:50:38 - Leitura owid-covid-data.0 - Line number : 50000
+2021/07/24 23:50:38 - Seleção de colunas a ser utilizada.0 - linenr 50000
+2021/07/24 23:50:38 - Filter rows.0 - linenr 50000
+2021/07/24 23:50:39 - Renomeando atributos.0 - linenr 50000
+2021/07/24 23:50:41 - Leitura owid-covid-data.0 - Line number : 100000
+2021/07/24 23:50:42 - Leitura owid-covid-data.0 - Finished processing (I=104565, O=0, R=0, W=104564, U=0, E=0)
+2021/07/24 23:50:43 - Seleção de colunas a ser utilizada.0 - linenr 100000
+2021/07/24 23:50:44 - Seleção de colunas a ser utilizada.0 - Finished processing (I=0, O=0, R=104564, W=104564, U=0, E=0)
+2021/07/24 23:50:45 - Filter rows.0 - linenr 100000
+2021/07/24 23:50:46 - Filter rows.0 - Finished processing (I=0, O=0, R=104564, W=99035, U=0, E=0)
+2021/07/24 23:50:46 - Gera SQL na stage.0 - linenr 50000
+2021/07/24 23:50:47 - Renomeando atributos.0 - Finished processing (I=0, O=0, R=99035, W=99035, U=0, E=0)
+2021/07/24 23:50:49 - Traducao paises.0 - Finished processing (I=0, O=0, R=99035, W=99035, U=0, E=0)
+2021/07/24 23:50:50 - Traducao continentes.0 - Finished processing (I=0, O=0, R=99035, W=99035, U=0, E=0)
+2021/07/24 23:50:52 - Trata  metricas nulas.0 - Finished processing (I=0, O=0, R=99035, W=99035, U=0, E=0)
+2021/07/24 23:50:54 - projeto - Connection to database closed!
+2021/07/24 23:50:54 - Gera SQL na stage.0 - Finished processing (I=0, O=99035, R=99035, W=99035, U=0, E=0)
+2021/07/24 23:50:54 - Covid19_job - Starting entry [Success]
+2021/07/24 23:50:54 - Covid19_job - Starting entry [Job Executado com Sucesso]
+2021/07/24 23:50:54 - Covid19_job - Finished job entry [Job Executado com Sucesso] (result=[true])
+2021/07/24 23:50:54 - Covid19_job - Finished job entry [Success] (result=[true])
+2021/07/24 23:50:54 - Covid19_job - Finished job entry [Step 1 - ETL e Criacao da Stage] (result=[true])
+2021/07/24 23:50:54 - Covid19_job - Finished job entry [Step 0 - Get CSV] (result=[true])
+2021/07/24 23:50:54 - Covid19_job - Job execution finished
+2021/07/24 23:50:54 - Kitchen - Finished!
+2021/07/24 23:50:54 - Kitchen - Start=2021/07/24 23:50:13.485, Stop=2021/07/24 23:50:54.596
+2021/07/24 23:50:54 - Kitchen - Processing ended after 41 seconds.
+ 
+ 
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre1.8.0_291
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre1.8.0_291\bin\java.exe
+
+C:\Pentaho\data-integration>"C:\Program Files\Java\jre1.8.0_291\bin\java.exe"  "-Xms1024m" "-Xmx2048m" "-XX:MaxPermSize=256m" "-Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-7.1.0.0-12.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen -initialDir "C:\WINDOWS\system32"\ /file:"C:\Projeto_BI\ktr\Covid19_job.kjb" /level:Basic 
+12:53:39,067 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+12:53:47,540 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 2 at C:\Pentaho\data-integration\.\system\karaf\ ***
+***   caches\kitchen\data-1                                                 ***
+*** FastBin Provider Port:52902                                             ***
+*** Karaf Port:8803                                                         ***
+*** OSGI Service Port:9052                                                  ***
+*******************************************************************************
+2021/07/25 12:54:13 - Kitchen - Logging is at level : Log básico
+2021/07/25 12:54:13 - Kitchen - Start of run.
+Updating configuration from org.apache.aries.rsa.provider.fastbin.cfg
+Updating configuration from org.ops4j.pax.web.cfg
+Updating configuration from org.apache.karaf.shell.cfg
+2021/07/25 12:54:39 - Covid19_job - Início da execução do job
+2021/07/25 12:54:39 - Covid19_job - Starting entry [Step 0 - Get CSV]
+2021/07/25 12:54:39 - Step 0 - Get CSV - Loading transformation from XML file [file:///C:/Projeto_BI/ktr/00_Extracao_CSV_Github.ktr]
+2021/07/25 12:54:40 - Step 0 - Get CSV - Using run configuration [Pentaho local]
+2021/07/25 12:54:40 - Step 0 - Get CSV - Using legacy execution engine
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Expedindo in?cio para transforma??o [00Extracao_CSV_Github]
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Nr de argumentos detectados:0 
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Esta n?o ? uma repeti??o de transforma??o
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Foram encotrados 4 steps diferentes para executar.
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Alocando rowsets...
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Alocando rowsets para o step 0 --> HTTP Client
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Transforma??o alocou novo rowset [HTTP Client.0 - Text file output.0]
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Foram alocados 1 rowsets por step 0 --> HTTP Client  
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Alocando rowsets para o step 1 --> Text file output
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Transforma??o alocou novo rowset [Text file output.0 - Block this step until steps finish.0]
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Foram alocados 2 rowsets por step 1 --> Text file output  
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Alocando rowsets para o step 2 --> Block this step until steps finish
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Foram alocados 2 rowsets por step 2 --> Block this step until steps finish  
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Alocando rowsets para o step 3 --> Dummy de entrada (WORKAROUND)
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Transforma??o alocou novo rowset [Dummy de entrada (WORKAROUND).0 - HTTP Client.0]
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Foram alocados 3 rowsets por step 3 --> Dummy de entrada (WORKAROUND)  
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Alocando Steps & StepData...
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [HTTP Client] do tipe [HTTP]
+2021/07/25 12:54:40 - HTTP Client.0 - distribution activated
+2021/07/25 12:54:40 - HTTP Client.0 - Starting allocation of buffers & new threads...
+2021/07/25 12:54:40 - HTTP Client.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 12:54:40 - HTTP Client.0 - Got previous step from [HTTP Client] #0 --> Dummy de entrada (WORKAROUND)
+2021/07/25 12:54:40 - HTTP Client.0 - input rel is 1:1
+2021/07/25 12:54:40 - HTTP Client.0 - Found input rowset [Dummy de entrada (WORKAROUND).0 - HTTP Client.0]
+2021/07/25 12:54:40 - HTTP Client.0 - output rel. is  1:1
+2021/07/25 12:54:40 - HTTP Client.0 - Found output rowset [HTTP Client.0 - Text file output.0]
+2021/07/25 12:54:40 - HTTP Client.0 - Finished dispatching
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [HTTP Client].0
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [Text file output] do tipe [TextFileOutput]
+2021/07/25 12:54:40 - Text file output.0 - distribution activated
+2021/07/25 12:54:40 - Text file output.0 - Starting allocation of buffers & new threads...
+2021/07/25 12:54:40 - Text file output.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 12:54:40 - Text file output.0 - Got previous step from [Text file output] #0 --> HTTP Client
+2021/07/25 12:54:40 - Text file output.0 - input rel is 1:1
+2021/07/25 12:54:40 - Text file output.0 - Found input rowset [HTTP Client.0 - Text file output.0]
+2021/07/25 12:54:40 - Text file output.0 - output rel. is  1:1
+2021/07/25 12:54:40 - Text file output.0 - Found output rowset [Text file output.0 - Block this step until steps finish.0]
+2021/07/25 12:54:40 - Text file output.0 - Finished dispatching
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [Text file output].0
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [Block this step until steps finish] do tipe [BlockUntilStepsFinish]
+2021/07/25 12:54:40 - Block this step until steps finish.0 - distribution activated
+2021/07/25 12:54:40 - Block this step until steps finish.0 - Starting allocation of buffers & new threads...
+2021/07/25 12:54:40 - Block this step until steps finish.0 - Step info: nrinput=1 nroutput=0
+2021/07/25 12:54:40 - Block this step until steps finish.0 - Got previous step from [Block this step until steps finish] #0 --> Text file output
+2021/07/25 12:54:40 - Block this step until steps finish.0 - input rel is 1:1
+2021/07/25 12:54:40 - Block this step until steps finish.0 - Found input rowset [Text file output.0 - Block this step until steps finish.0]
+2021/07/25 12:54:40 - Block this step until steps finish.0 - Finished dispatching
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [Block this step until steps finish].0
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [Dummy de entrada (WORKAROUND)] do tipe [DataGrid]
+2021/07/25 12:54:40 - Dummy de entrada (WORKAROUND).0 - distribution activated
+2021/07/25 12:54:40 - Dummy de entrada (WORKAROUND).0 - Starting allocation of buffers & new threads...
+2021/07/25 12:54:40 - Dummy de entrada (WORKAROUND).0 - Step info: nrinput=0 nroutput=1
+2021/07/25 12:54:40 - Dummy de entrada (WORKAROUND).0 - output rel. is  1:1
+2021/07/25 12:54:40 - Dummy de entrada (WORKAROUND).0 - Found output rowset [Dummy de entrada (WORKAROUND).0 - HTTP Client.0]
+2021/07/25 12:54:40 - Dummy de entrada (WORKAROUND).0 - Finished dispatching
+2021/07/25 12:54:40 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [Dummy de entrada (WORKAROUND)].0
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Esta transforma??o pode ser repetida com a data de repeti??o : 2021/07/25 12:54:40
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Inicializando 4 steps...
+2021/07/25 12:54:40 - Dummy de entrada (WORKAROUND).0 - Released server socket on port 0
+2021/07/25 12:54:40 - HTTP Client.0 - Released server socket on port 0
+2021/07/25 12:54:40 - Block this step until steps finish.0 - Released server socket on port 0
+2021/07/25 12:54:40 - Text file output.0 - Released server socket on port 0
+2021/07/25 12:54:40 - Text file output.0 - Parent folder exists [file:///C:/Projeto_BI/data]!
+2021/07/25 12:54:40 - Text file output.0 - Opening output stream using provider: None
+2021/07/25 12:54:40 - Text file output.0 - Opening output stream in encoding: UTF-8
+2021/07/25 12:54:40 - Text file output.0 - Opened new file with name [file:///C:/Projeto_BI/data/owid-covid-data.csv]
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Step [HTTP Client.0] inicializado sem falhas.
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Step [Text file output.0] inicializado sem falhas.
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Step [Block this step until steps finish.0] inicializado sem falhas.
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Step [Dummy de entrada (WORKAROUND).0] inicializado sem falhas.
+2021/07/25 12:54:40 - HTTP Client.0 - Iniciando execução...
+2021/07/25 12:54:40 - Text file output.0 - Iniciando execução...
+2021/07/25 12:54:40 - Block this step until steps finish.0 - Iniciando execução...
+2021/07/25 12:54:40 - Dummy de entrada (WORKAROUND).0 - Iniciando execução...
+2021/07/25 12:54:40 - 00Extracao_CSV_Github - Transforma??o alocou 4 threads e 3 rowsets.
+2021/07/25 12:54:40 - Dummy de entrada (WORKAROUND).0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2021/07/25 12:54:40 - HTTP Client.0 - Connecting to : [https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv]
+2021/07/25 12:54:41 - HTTP Client.0 - Response time (milliseconds): [521] for [https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv]
+2021/07/25 12:55:49 - HTTP Client.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2021/07/25 12:55:50 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2021/07/25 12:55:51 - Block this step until steps finish.0 - Finished running step [Text file output(0)].
+2021/07/25 12:55:51 - Block this step until steps finish.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2021/07/25 12:55:51 - Covid19_job - Starting entry [Step 1 - ETL e Criacao da Stage]
+2021/07/25 12:55:51 - Step 1 - ETL e Criacao da Stage - Loading transformation from XML file [file:///C:/Projeto_BI/ktr/01_etl1.ktr]
+2021/07/25 12:55:51 - Step 1 - ETL e Criacao da Stage - Using run configuration [Pentaho local]
+2021/07/25 12:55:51 - Step 1 - ETL e Criacao da Stage - Using legacy execution engine
+2021/07/25 12:55:51 - etl1_continentes - Expedindo in?cio para transforma??o [etl1_continentes]
+2021/07/25 12:55:51 - etl1_continentes - Nr de argumentos detectados:0 
+2021/07/25 12:55:51 - etl1_continentes - Esta n?o ? uma repeti??o de transforma??o
+2021/07/25 12:55:51 - etl1_continentes - Foram encotrados 8 steps diferentes para executar.
+2021/07/25 12:55:51 - etl1_continentes - Alocando rowsets...
+2021/07/25 12:55:51 - etl1_continentes -  Alocando rowsets para o step 0 --> Leitura owid-covid-data
+2021/07/25 12:55:51 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 12:55:51 - etl1_continentes - Transforma??o alocou novo rowset [Leitura owid-covid-data.0 - Seleção de colunas a ser utilizada.0]
+2021/07/25 12:55:51 - etl1_continentes -  Foram alocados 1 rowsets por step 0 --> Leitura owid-covid-data  
+2021/07/25 12:55:51 - etl1_continentes -  Alocando rowsets para o step 1 --> Seleção de colunas a ser utilizada
+2021/07/25 12:55:51 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 12:55:51 - etl1_continentes - Transforma??o alocou novo rowset [Seleção de colunas a ser utilizada.0 - Filter rows.0]
+2021/07/25 12:55:51 - etl1_continentes -  Foram alocados 2 rowsets por step 1 --> Seleção de colunas a ser utilizada  
+2021/07/25 12:55:51 - etl1_continentes -  Alocando rowsets para o step 2 --> Renomeando atributos
+2021/07/25 12:55:51 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 12:55:51 - etl1_continentes - Transforma??o alocou novo rowset [Renomeando atributos.0 - Traducao paises.0]
+2021/07/25 12:55:51 - etl1_continentes -  Foram alocados 3 rowsets por step 2 --> Renomeando atributos  
+2021/07/25 12:55:51 - etl1_continentes -  Alocando rowsets para o step 3 --> Traducao paises
+2021/07/25 12:55:51 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 12:55:51 - etl1_continentes - Transforma??o alocou novo rowset [Traducao paises.0 - Traducao continentes.0]
+2021/07/25 12:55:51 - etl1_continentes -  Foram alocados 4 rowsets por step 3 --> Traducao paises  
+2021/07/25 12:55:51 - etl1_continentes -  Alocando rowsets para o step 4 --> Trata  metricas nulas
+2021/07/25 12:55:51 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 12:55:51 - etl1_continentes - Transforma??o alocou novo rowset [Trata  metricas nulas.0 - Gera SQL na stage.0]
+2021/07/25 12:55:51 - etl1_continentes -  Foram alocados 5 rowsets por step 4 --> Trata  metricas nulas  
+2021/07/25 12:55:51 - etl1_continentes -  Alocando rowsets para o step 5 --> Gera SQL na stage
+2021/07/25 12:55:51 - etl1_continentes -  Foram alocados 5 rowsets por step 5 --> Gera SQL na stage  
+2021/07/25 12:55:51 - etl1_continentes -  Alocando rowsets para o step 6 --> Traducao continentes
+2021/07/25 12:55:51 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 12:55:51 - etl1_continentes - Transforma??o alocou novo rowset [Traducao continentes.0 - Trata  metricas nulas.0]
+2021/07/25 12:55:51 - etl1_continentes -  Foram alocados 6 rowsets por step 6 --> Traducao continentes  
+2021/07/25 12:55:51 - etl1_continentes -  Alocando rowsets para o step 7 --> Filter rows
+2021/07/25 12:55:51 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 12:55:51 - etl1_continentes - Transforma??o alocou novo rowset [Filter rows.0 - Renomeando atributos.0]
+2021/07/25 12:55:51 - etl1_continentes -  Foram alocados 7 rowsets por step 7 --> Filter rows  
+2021/07/25 12:55:51 - etl1_continentes - Alocando Steps & StepData...
+2021/07/25 12:55:51 - etl1_continentes -  Transforma??o ir? alocar o step [Leitura owid-covid-data] do tipe [CsvInput]
+2021/07/25 12:55:51 - Leitura owid-covid-data.0 - distribution activated
+2021/07/25 12:55:51 - Leitura owid-covid-data.0 - Starting allocation of buffers & new threads...
+2021/07/25 12:55:51 - Leitura owid-covid-data.0 - Step info: nrinput=0 nroutput=1
+2021/07/25 12:55:51 - Leitura owid-covid-data.0 - output rel. is  1:1
+2021/07/25 12:55:51 - Leitura owid-covid-data.0 - Found output rowset [Leitura owid-covid-data.0 - Seleção de colunas a ser utilizada.0]
+2021/07/25 12:55:51 - Leitura owid-covid-data.0 - Finished dispatching
+2021/07/25 12:55:51 - etl1_continentes -  Transforma??o alocou um novo step: [Leitura owid-covid-data].0
+2021/07/25 12:55:51 - etl1_continentes -  Transforma??o ir? alocar o step [Seleção de colunas a ser utilizada] do tipe [SelectValues]
+2021/07/25 12:55:51 - Seleção de colunas a ser utilizada.0 - distribution activated
+2021/07/25 12:55:51 - Seleção de colunas a ser utilizada.0 - Starting allocation of buffers & new threads...
+2021/07/25 12:55:51 - Seleção de colunas a ser utilizada.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 12:55:51 - Seleção de colunas a ser utilizada.0 - Got previous step from [Seleção de colunas a ser utilizada] #0 --> Leitura owid-covid-data
+2021/07/25 12:55:51 - Seleção de colunas a ser utilizada.0 - input rel is 1:1
+2021/07/25 12:55:51 - Seleção de colunas a ser utilizada.0 - Found input rowset [Leitura owid-covid-data.0 - Seleção de colunas a ser utilizada.0]
+2021/07/25 12:55:51 - Seleção de colunas a ser utilizada.0 - output rel. is  1:1
+2021/07/25 12:55:51 - Seleção de colunas a ser utilizada.0 - Found output rowset [Seleção de colunas a ser utilizada.0 - Filter rows.0]
+2021/07/25 12:55:52 - Seleção de colunas a ser utilizada.0 - Finished dispatching
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o alocou um novo step: [Seleção de colunas a ser utilizada].0
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o ir? alocar o step [Renomeando atributos] do tipe [SelectValues]
+2021/07/25 12:55:52 - Renomeando atributos.0 - distribution activated
+2021/07/25 12:55:52 - Renomeando atributos.0 - Starting allocation of buffers & new threads...
+2021/07/25 12:55:52 - Renomeando atributos.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 12:55:52 - Renomeando atributos.0 - Got previous step from [Renomeando atributos] #0 --> Filter rows
+2021/07/25 12:55:52 - Renomeando atributos.0 - input rel is 1:1
+2021/07/25 12:55:52 - Renomeando atributos.0 - Found input rowset [Filter rows.0 - Renomeando atributos.0]
+2021/07/25 12:55:52 - Renomeando atributos.0 - output rel. is  1:1
+2021/07/25 12:55:52 - Renomeando atributos.0 - Found output rowset [Renomeando atributos.0 - Traducao paises.0]
+2021/07/25 12:55:52 - Renomeando atributos.0 - Finished dispatching
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o alocou um novo step: [Renomeando atributos].0
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o ir? alocar o step [Traducao paises] do tipe [ValueMapper]
+2021/07/25 12:55:52 - Traducao paises.0 - distribution de-activated
+2021/07/25 12:55:52 - Traducao paises.0 - Starting allocation of buffers & new threads...
+2021/07/25 12:55:52 - Traducao paises.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 12:55:52 - Traducao paises.0 - Got previous step from [Traducao paises] #0 --> Renomeando atributos
+2021/07/25 12:55:52 - Traducao paises.0 - input rel is 1:1
+2021/07/25 12:55:52 - Traducao paises.0 - Found input rowset [Renomeando atributos.0 - Traducao paises.0]
+2021/07/25 12:55:52 - Traducao paises.0 - output rel. is  1:1
+2021/07/25 12:55:52 - Traducao paises.0 - Found output rowset [Traducao paises.0 - Traducao continentes.0]
+2021/07/25 12:55:52 - Traducao paises.0 - Finished dispatching
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o alocou um novo step: [Traducao paises].0
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o ir? alocar o step [Trata  metricas nulas] do tipe [IfNull]
+2021/07/25 12:55:52 - Trata  metricas nulas.0 - distribution activated
+2021/07/25 12:55:52 - Trata  metricas nulas.0 - Starting allocation of buffers & new threads...
+2021/07/25 12:55:52 - Trata  metricas nulas.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 12:55:52 - Trata  metricas nulas.0 - Got previous step from [Trata  metricas nulas] #0 --> Traducao continentes
+2021/07/25 12:55:52 - Trata  metricas nulas.0 - input rel is 1:1
+2021/07/25 12:55:52 - Trata  metricas nulas.0 - Found input rowset [Traducao continentes.0 - Trata  metricas nulas.0]
+2021/07/25 12:55:52 - Trata  metricas nulas.0 - output rel. is  1:1
+2021/07/25 12:55:52 - Trata  metricas nulas.0 - Found output rowset [Trata  metricas nulas.0 - Gera SQL na stage.0]
+2021/07/25 12:55:52 - Trata  metricas nulas.0 - Finished dispatching
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o alocou um novo step: [Trata  metricas nulas].0
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o ir? alocar o step [Gera SQL na stage] do tipe [TableOutput]
+2021/07/25 12:55:52 - Gera SQL na stage.0 - distribution activated
+2021/07/25 12:55:52 - Gera SQL na stage.0 - Starting allocation of buffers & new threads...
+2021/07/25 12:55:52 - Gera SQL na stage.0 - Step info: nrinput=1 nroutput=0
+2021/07/25 12:55:52 - Gera SQL na stage.0 - Got previous step from [Gera SQL na stage] #0 --> Trata  metricas nulas
+2021/07/25 12:55:52 - Gera SQL na stage.0 - input rel is 1:1
+2021/07/25 12:55:52 - Gera SQL na stage.0 - Found input rowset [Trata  metricas nulas.0 - Gera SQL na stage.0]
+2021/07/25 12:55:52 - Gera SQL na stage.0 - Finished dispatching
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o alocou um novo step: [Gera SQL na stage].0
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o ir? alocar o step [Traducao continentes] do tipe [ValueMapper]
+2021/07/25 12:55:52 - Traducao continentes.0 - distribution activated
+2021/07/25 12:55:52 - Traducao continentes.0 - Starting allocation of buffers & new threads...
+2021/07/25 12:55:52 - Traducao continentes.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 12:55:52 - Traducao continentes.0 - Got previous step from [Traducao continentes] #0 --> Traducao paises
+2021/07/25 12:55:52 - Traducao continentes.0 - input rel is 1:1
+2021/07/25 12:55:52 - Traducao continentes.0 - Found input rowset [Traducao paises.0 - Traducao continentes.0]
+2021/07/25 12:55:52 - Traducao continentes.0 - output rel. is  1:1
+2021/07/25 12:55:52 - Traducao continentes.0 - Found output rowset [Traducao continentes.0 - Trata  metricas nulas.0]
+2021/07/25 12:55:52 - Traducao continentes.0 - Finished dispatching
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o alocou um novo step: [Traducao continentes].0
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o ir? alocar o step [Filter rows] do tipe [FilterRows]
+2021/07/25 12:55:52 - Filter rows.0 - distribution activated
+2021/07/25 12:55:52 - Filter rows.0 - Starting allocation of buffers & new threads...
+2021/07/25 12:55:52 - Filter rows.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 12:55:52 - Filter rows.0 - Got previous step from [Filter rows] #0 --> Seleção de colunas a ser utilizada
+2021/07/25 12:55:52 - Filter rows.0 - input rel is 1:1
+2021/07/25 12:55:52 - Filter rows.0 - Found input rowset [Seleção de colunas a ser utilizada.0 - Filter rows.0]
+2021/07/25 12:55:52 - Filter rows.0 - output rel. is  1:1
+2021/07/25 12:55:52 - Filter rows.0 - Found output rowset [Filter rows.0 - Renomeando atributos.0]
+2021/07/25 12:55:52 - Filter rows.0 - Finished dispatching
+2021/07/25 12:55:52 - etl1_continentes -  Transforma??o alocou um novo step: [Filter rows].0
+2021/07/25 12:55:52 - etl1_continentes - Esta transforma??o pode ser repetida com a data de repeti??o : 2021/07/25 12:55:52
+2021/07/25 12:55:52 - etl1_continentes - Inicializando 8 steps...
+2021/07/25 12:55:52 - Leitura owid-covid-data.0 - Released server socket on port 0
+2021/07/25 12:55:52 - Renomeando atributos.0 - Released server socket on port 0
+2021/07/25 12:55:52 - Trata  metricas nulas.0 - Released server socket on port 0
+2021/07/25 12:55:52 - Traducao continentes.0 - Released server socket on port 0
+2021/07/25 12:55:52 - Gera SQL na stage.0 - Released server socket on port 0
+2021/07/25 12:55:52 - Filter rows.0 - Released server socket on port 0
+2021/07/25 12:55:52 - Seleção de colunas a ser utilizada.0 - Released server socket on port 0
+2021/07/25 12:55:52 - Traducao paises.0 - Released server socket on port 0
+2021/07/25 12:55:52 - projeto - New database connection defined
+2021/07/25 12:55:52 - Gera SQL na stage.0 - Connected to database [projeto] (commit=1000)
+2021/07/25 12:55:52 - projeto - Auto commit off
+2021/07/25 12:55:52 - etl1_continentes - Step [Leitura owid-covid-data.0] inicializado sem falhas.
+2021/07/25 12:55:52 - etl1_continentes - Step [Seleção de colunas a ser utilizada.0] inicializado sem falhas.
+2021/07/25 12:55:52 - etl1_continentes - Step [Renomeando atributos.0] inicializado sem falhas.
+2021/07/25 12:55:52 - etl1_continentes - Step [Traducao paises.0] inicializado sem falhas.
+2021/07/25 12:55:52 - etl1_continentes - Step [Trata  metricas nulas.0] inicializado sem falhas.
+2021/07/25 12:55:52 - etl1_continentes - Step [Gera SQL na stage.0] inicializado sem falhas.
+2021/07/25 12:55:52 - etl1_continentes - Step [Traducao continentes.0] inicializado sem falhas.
+2021/07/25 12:55:52 - etl1_continentes - Step [Filter rows.0] inicializado sem falhas.
+2021/07/25 12:55:52 - Leitura owid-covid-data.0 - Iniciando execução...
+2021/07/25 12:55:52 - Seleção de colunas a ser utilizada.0 - Iniciando execução...
+2021/07/25 12:55:52 - Traducao paises.0 - Iniciando execução...
+2021/07/25 12:55:52 - Renomeando atributos.0 - Iniciando execução...
+2021/07/25 12:55:52 - Trata  metricas nulas.0 - Iniciando execução...
+2021/07/25 12:55:52 - Gera SQL na stage.0 - Iniciando execução...
+2021/07/25 12:55:52 - Traducao continentes.0 - Iniciando execução...
+2021/07/25 12:55:52 - etl1_continentes - Transforma??o alocou 8 threads e 7 rowsets.
+2021/07/25 12:55:52 - Filter rows.0 - Iniciando execução...
+2021/07/25 12:55:52 - Leitura owid-covid-data.0 - Header row skipped in file 'C:\Projeto_BI\data\owid-covid-data.csv'
+2021/07/25 12:55:53 - Gera SQL na stage.0 - Prepared statement : INSERT INTO stg_covid.dados_gerais (nk_local, nm_continente, nm_pais, nk_data, med_total_mortes, med_novas_mortes, med_total_mortes_por_milhao, med_novas_mortes_por_milhao, med_pessoas_vacinadas, med_pessoas_totalmente_vacinadas, med_pessoas_vacinadas_por_100, med_pessoas_totalmente_vacinadas_por_cem, nr_populacao) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2021/07/25 12:56:00 - Leitura owid-covid-data.0 - Line number : 50000
+2021/07/25 12:56:00 - Seleção de colunas a ser utilizada.0 - linenr 50000
+2021/07/25 12:56:00 - Filter rows.0 - linenr 50000
+2021/07/25 12:56:01 - Renomeando atributos.0 - linenr 50000
+2021/07/25 12:56:06 - Gera SQL na stage.0 - linenr 50000
+2021/07/25 12:56:08 - Leitura owid-covid-data.0 - Line number : 100000
+2021/07/25 12:56:08 - Seleção de colunas a ser utilizada.0 - linenr 100000
+2021/07/25 12:56:08 - Filter rows.0 - linenr 100000
+2021/07/25 12:56:09 - Seleção de colunas a ser utilizada.0 - Finished processing (I=0, O=0, R=104802, W=104802, U=0, E=0)
+2021/07/25 12:56:09 - Filter rows.0 - Finished processing (I=0, O=0, R=104802, W=99263, U=0, E=0)
+2021/07/25 12:56:09 - Renomeando atributos.0 - Finished processing (I=0, O=0, R=99263, W=99263, U=0, E=0)
+2021/07/25 12:56:09 - Leitura owid-covid-data.0 - Finished processing (I=104803, O=0, R=0, W=104802, U=0, E=0)
+2021/07/25 12:56:11 - Traducao paises.0 - Finished processing (I=0, O=0, R=99263, W=99263, U=0, E=0)
+2021/07/25 12:56:13 - Traducao continentes.0 - Finished processing (I=0, O=0, R=99263, W=99263, U=0, E=0)
+2021/07/25 12:56:15 - Trata  metricas nulas.0 - Finished processing (I=0, O=0, R=99263, W=99263, U=0, E=0)
+2021/07/25 12:56:17 - projeto - Connection to database closed!
+2021/07/25 12:56:17 - Gera SQL na stage.0 - Finished processing (I=0, O=99263, R=99263, W=99263, U=0, E=0)
+2021/07/25 12:56:17 - Covid19_job - Starting entry [Success]
+2021/07/25 12:56:17 - Covid19_job - Starting entry [Job Executado com Sucesso]
+2021/07/25 12:56:17 - Covid19_job - Finished job entry [Job Executado com Sucesso] (result=[true])
+2021/07/25 12:56:17 - Covid19_job - Finished job entry [Success] (result=[true])
+2021/07/25 12:56:17 - Covid19_job - Finished job entry [Step 1 - ETL e Criacao da Stage] (result=[true])
+2021/07/25 12:56:17 - Covid19_job - Finished job entry [Step 0 - Get CSV] (result=[true])
+2021/07/25 12:56:17 - Covid19_job - Job execution finished
+2021/07/25 12:56:17 - Kitchen - Finished!
+2021/07/25 12:56:17 - Kitchen - Start=2021/07/25 12:54:13.674, Stop=2021/07/25 12:56:17.613
+2021/07/25 12:56:17 - Kitchen - Processing ended after 2 minutes and 3 seconds (123 seconds total).
+ 
+ 
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre1.8.0_291
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre1.8.0_291\bin\java.exe
+
+C:\Pentaho\data-integration>"C:\Program Files\Java\jre1.8.0_291\bin\java.exe"  "-Xms1024m" "-Xmx2048m" "-XX:MaxPermSize=256m" "-Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-7.1.0.0-12.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen -initialDir "C:\WINDOWS\system32"\ /file:"C:\Projeto_BI\ktr\Covid19_job.kjb" /level:Basic 
+23:50:15,043 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+23:50:23,371 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 2 at C:\Pentaho\data-integration\.\system\karaf\ ***
+***   caches\kitchen\data-1                                                 ***
+*** FastBin Provider Port:52902                                             ***
+*** Karaf Port:8803                                                         ***
+*** OSGI Service Port:9052                                                  ***
+*******************************************************************************
+2021/07/25 23:50:44 - Kitchen - Logging is at level : Log básico
+2021/07/25 23:50:44 - Kitchen - Start of run.
+2021/07/25 23:50:58 - Covid19_job - Início da execução do job
+2021/07/25 23:50:58 - Covid19_job - Starting entry [Step 0 - Get CSV]
+2021/07/25 23:50:58 - Step 0 - Get CSV - Loading transformation from XML file [file:///C:/Projeto_BI/ktr/00_Extracao_CSV_Github.ktr]
+2021/07/25 23:50:58 - Step 0 - Get CSV - Using run configuration [Pentaho local]
+2021/07/25 23:50:58 - Step 0 - Get CSV - Using legacy execution engine
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Expedindo in?cio para transforma??o [00Extracao_CSV_Github]
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Nr de argumentos detectados:0 
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Esta n?o ? uma repeti??o de transforma??o
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Foram encotrados 4 steps diferentes para executar.
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Alocando rowsets...
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Alocando rowsets para o step 0 --> HTTP Client
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Transforma??o alocou novo rowset [HTTP Client.0 - Text file output.0]
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Foram alocados 1 rowsets por step 0 --> HTTP Client  
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Alocando rowsets para o step 1 --> Text file output
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Transforma??o alocou novo rowset [Text file output.0 - Block this step until steps finish.0]
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Foram alocados 2 rowsets por step 1 --> Text file output  
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Alocando rowsets para o step 2 --> Block this step until steps finish
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Foram alocados 2 rowsets por step 2 --> Block this step until steps finish  
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Alocando rowsets para o step 3 --> Dummy de entrada (WORKAROUND)
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Transforma??o alocou novo rowset [Dummy de entrada (WORKAROUND).0 - HTTP Client.0]
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Foram alocados 3 rowsets por step 3 --> Dummy de entrada (WORKAROUND)  
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Alocando Steps & StepData...
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [HTTP Client] do tipe [HTTP]
+2021/07/25 23:50:58 - HTTP Client.0 - distribution activated
+2021/07/25 23:50:58 - HTTP Client.0 - Starting allocation of buffers & new threads...
+2021/07/25 23:50:58 - HTTP Client.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 23:50:58 - HTTP Client.0 - Got previous step from [HTTP Client] #0 --> Dummy de entrada (WORKAROUND)
+2021/07/25 23:50:58 - HTTP Client.0 - input rel is 1:1
+2021/07/25 23:50:58 - HTTP Client.0 - Found input rowset [Dummy de entrada (WORKAROUND).0 - HTTP Client.0]
+2021/07/25 23:50:58 - HTTP Client.0 - output rel. is  1:1
+2021/07/25 23:50:58 - HTTP Client.0 - Found output rowset [HTTP Client.0 - Text file output.0]
+2021/07/25 23:50:58 - HTTP Client.0 - Finished dispatching
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [HTTP Client].0
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [Text file output] do tipe [TextFileOutput]
+2021/07/25 23:50:58 - Text file output.0 - distribution activated
+2021/07/25 23:50:58 - Text file output.0 - Starting allocation of buffers & new threads...
+2021/07/25 23:50:58 - Text file output.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 23:50:58 - Text file output.0 - Got previous step from [Text file output] #0 --> HTTP Client
+2021/07/25 23:50:58 - Text file output.0 - input rel is 1:1
+2021/07/25 23:50:58 - Text file output.0 - Found input rowset [HTTP Client.0 - Text file output.0]
+2021/07/25 23:50:58 - Text file output.0 - output rel. is  1:1
+2021/07/25 23:50:58 - Text file output.0 - Found output rowset [Text file output.0 - Block this step until steps finish.0]
+2021/07/25 23:50:58 - Text file output.0 - Finished dispatching
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [Text file output].0
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [Block this step until steps finish] do tipe [BlockUntilStepsFinish]
+2021/07/25 23:50:58 - Block this step until steps finish.0 - distribution activated
+2021/07/25 23:50:58 - Block this step until steps finish.0 - Starting allocation of buffers & new threads...
+2021/07/25 23:50:58 - Block this step until steps finish.0 - Step info: nrinput=1 nroutput=0
+2021/07/25 23:50:58 - Block this step until steps finish.0 - Got previous step from [Block this step until steps finish] #0 --> Text file output
+2021/07/25 23:50:58 - Block this step until steps finish.0 - input rel is 1:1
+2021/07/25 23:50:58 - Block this step until steps finish.0 - Found input rowset [Text file output.0 - Block this step until steps finish.0]
+2021/07/25 23:50:58 - Block this step until steps finish.0 - Finished dispatching
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [Block this step until steps finish].0
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [Dummy de entrada (WORKAROUND)] do tipe [DataGrid]
+2021/07/25 23:50:58 - Dummy de entrada (WORKAROUND).0 - distribution activated
+2021/07/25 23:50:58 - Dummy de entrada (WORKAROUND).0 - Starting allocation of buffers & new threads...
+2021/07/25 23:50:58 - Dummy de entrada (WORKAROUND).0 - Step info: nrinput=0 nroutput=1
+2021/07/25 23:50:58 - Dummy de entrada (WORKAROUND).0 - output rel. is  1:1
+2021/07/25 23:50:58 - Dummy de entrada (WORKAROUND).0 - Found output rowset [Dummy de entrada (WORKAROUND).0 - HTTP Client.0]
+2021/07/25 23:50:58 - Dummy de entrada (WORKAROUND).0 - Finished dispatching
+2021/07/25 23:50:58 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [Dummy de entrada (WORKAROUND)].0
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Esta transforma??o pode ser repetida com a data de repeti??o : 2021/07/25 23:50:58
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Inicializando 4 steps...
+2021/07/25 23:50:58 - HTTP Client.0 - Released server socket on port 0
+2021/07/25 23:50:58 - Dummy de entrada (WORKAROUND).0 - Released server socket on port 0
+2021/07/25 23:50:58 - Block this step until steps finish.0 - Released server socket on port 0
+2021/07/25 23:50:58 - Text file output.0 - Released server socket on port 0
+2021/07/25 23:50:58 - Text file output.0 - Parent folder exists [file:///C:/Projeto_BI/data]!
+2021/07/25 23:50:58 - Text file output.0 - Opening output stream using provider: None
+2021/07/25 23:50:58 - Text file output.0 - Opening output stream in encoding: UTF-8
+2021/07/25 23:50:58 - Text file output.0 - Opened new file with name [file:///C:/Projeto_BI/data/owid-covid-data.csv]
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Step [HTTP Client.0] inicializado sem falhas.
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Step [Text file output.0] inicializado sem falhas.
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Step [Block this step until steps finish.0] inicializado sem falhas.
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Step [Dummy de entrada (WORKAROUND).0] inicializado sem falhas.
+2021/07/25 23:50:58 - HTTP Client.0 - Iniciando execução...
+2021/07/25 23:50:58 - Text file output.0 - Iniciando execução...
+2021/07/25 23:50:58 - Block this step until steps finish.0 - Iniciando execução...
+2021/07/25 23:50:58 - Dummy de entrada (WORKAROUND).0 - Iniciando execução...
+2021/07/25 23:50:58 - 00Extracao_CSV_Github - Transforma??o alocou 4 threads e 3 rowsets.
+2021/07/25 23:50:58 - Dummy de entrada (WORKAROUND).0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2021/07/25 23:50:58 - HTTP Client.0 - Connecting to : [https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv]
+2021/07/25 23:51:00 - HTTP Client.0 - Response time (milliseconds): [1894] for [https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv]
+2021/07/25 23:51:08 - HTTP Client.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2021/07/25 23:51:08 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2021/07/25 23:51:08 - Block this step until steps finish.0 - Finished running step [Text file output(0)].
+2021/07/25 23:51:08 - Block this step until steps finish.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2021/07/25 23:51:08 - Covid19_job - Starting entry [Step 1 - ETL e Criacao da Stage]
+2021/07/25 23:51:08 - Step 1 - ETL e Criacao da Stage - Loading transformation from XML file [file:///C:/Projeto_BI/ktr/01_etl1.ktr]
+2021/07/25 23:51:09 - Step 1 - ETL e Criacao da Stage - Using run configuration [Pentaho local]
+2021/07/25 23:51:09 - Step 1 - ETL e Criacao da Stage - Using legacy execution engine
+2021/07/25 23:51:09 - etl1_continentes - Expedindo in?cio para transforma??o [etl1_continentes]
+2021/07/25 23:51:09 - etl1_continentes - Nr de argumentos detectados:0 
+2021/07/25 23:51:09 - etl1_continentes - Esta n?o ? uma repeti??o de transforma??o
+2021/07/25 23:51:09 - etl1_continentes - Foram encotrados 8 steps diferentes para executar.
+2021/07/25 23:51:09 - etl1_continentes - Alocando rowsets...
+2021/07/25 23:51:09 - etl1_continentes -  Alocando rowsets para o step 0 --> Leitura owid-covid-data
+2021/07/25 23:51:09 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 23:51:09 - etl1_continentes - Transforma??o alocou novo rowset [Leitura owid-covid-data.0 - Seleção de colunas a ser utilizada.0]
+2021/07/25 23:51:09 - etl1_continentes -  Foram alocados 1 rowsets por step 0 --> Leitura owid-covid-data  
+2021/07/25 23:51:09 - etl1_continentes -  Alocando rowsets para o step 1 --> Seleção de colunas a ser utilizada
+2021/07/25 23:51:09 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 23:51:09 - etl1_continentes - Transforma??o alocou novo rowset [Seleção de colunas a ser utilizada.0 - Filter rows.0]
+2021/07/25 23:51:09 - etl1_continentes -  Foram alocados 2 rowsets por step 1 --> Seleção de colunas a ser utilizada  
+2021/07/25 23:51:09 - etl1_continentes -  Alocando rowsets para o step 2 --> Renomeando atributos
+2021/07/25 23:51:09 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 23:51:09 - etl1_continentes - Transforma??o alocou novo rowset [Renomeando atributos.0 - Traducao paises.0]
+2021/07/25 23:51:09 - etl1_continentes -  Foram alocados 3 rowsets por step 2 --> Renomeando atributos  
+2021/07/25 23:51:09 - etl1_continentes -  Alocando rowsets para o step 3 --> Traducao paises
+2021/07/25 23:51:09 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 23:51:09 - etl1_continentes - Transforma??o alocou novo rowset [Traducao paises.0 - Traducao continentes.0]
+2021/07/25 23:51:09 - etl1_continentes -  Foram alocados 4 rowsets por step 3 --> Traducao paises  
+2021/07/25 23:51:09 - etl1_continentes -  Alocando rowsets para o step 4 --> Trata  metricas nulas
+2021/07/25 23:51:09 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 23:51:09 - etl1_continentes - Transforma??o alocou novo rowset [Trata  metricas nulas.0 - Gera SQL na stage.0]
+2021/07/25 23:51:09 - etl1_continentes -  Foram alocados 5 rowsets por step 4 --> Trata  metricas nulas  
+2021/07/25 23:51:09 - etl1_continentes -  Alocando rowsets para o step 5 --> Gera SQL na stage
+2021/07/25 23:51:09 - etl1_continentes -  Foram alocados 5 rowsets por step 5 --> Gera SQL na stage  
+2021/07/25 23:51:09 - etl1_continentes -  Alocando rowsets para o step 6 --> Traducao continentes
+2021/07/25 23:51:09 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 23:51:09 - etl1_continentes - Transforma??o alocou novo rowset [Traducao continentes.0 - Trata  metricas nulas.0]
+2021/07/25 23:51:09 - etl1_continentes -  Foram alocados 6 rowsets por step 6 --> Traducao continentes  
+2021/07/25 23:51:09 - etl1_continentes -  Alocando rowsets para o step 7 --> Filter rows
+2021/07/25 23:51:09 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/25 23:51:09 - etl1_continentes - Transforma??o alocou novo rowset [Filter rows.0 - Renomeando atributos.0]
+2021/07/25 23:51:09 - etl1_continentes -  Foram alocados 7 rowsets por step 7 --> Filter rows  
+2021/07/25 23:51:09 - etl1_continentes - Alocando Steps & StepData...
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o ir? alocar o step [Leitura owid-covid-data] do tipe [CsvInput]
+2021/07/25 23:51:09 - Leitura owid-covid-data.0 - distribution activated
+2021/07/25 23:51:09 - Leitura owid-covid-data.0 - Starting allocation of buffers & new threads...
+2021/07/25 23:51:09 - Leitura owid-covid-data.0 - Step info: nrinput=0 nroutput=1
+2021/07/25 23:51:09 - Leitura owid-covid-data.0 - output rel. is  1:1
+2021/07/25 23:51:09 - Leitura owid-covid-data.0 - Found output rowset [Leitura owid-covid-data.0 - Seleção de colunas a ser utilizada.0]
+2021/07/25 23:51:09 - Leitura owid-covid-data.0 - Finished dispatching
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o alocou um novo step: [Leitura owid-covid-data].0
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o ir? alocar o step [Seleção de colunas a ser utilizada] do tipe [SelectValues]
+2021/07/25 23:51:09 - Seleção de colunas a ser utilizada.0 - distribution activated
+2021/07/25 23:51:09 - Seleção de colunas a ser utilizada.0 - Starting allocation of buffers & new threads...
+2021/07/25 23:51:09 - Seleção de colunas a ser utilizada.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 23:51:09 - Seleção de colunas a ser utilizada.0 - Got previous step from [Seleção de colunas a ser utilizada] #0 --> Leitura owid-covid-data
+2021/07/25 23:51:09 - Seleção de colunas a ser utilizada.0 - input rel is 1:1
+2021/07/25 23:51:09 - Seleção de colunas a ser utilizada.0 - Found input rowset [Leitura owid-covid-data.0 - Seleção de colunas a ser utilizada.0]
+2021/07/25 23:51:09 - Seleção de colunas a ser utilizada.0 - output rel. is  1:1
+2021/07/25 23:51:09 - Seleção de colunas a ser utilizada.0 - Found output rowset [Seleção de colunas a ser utilizada.0 - Filter rows.0]
+2021/07/25 23:51:09 - Seleção de colunas a ser utilizada.0 - Finished dispatching
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o alocou um novo step: [Seleção de colunas a ser utilizada].0
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o ir? alocar o step [Renomeando atributos] do tipe [SelectValues]
+2021/07/25 23:51:09 - Renomeando atributos.0 - distribution activated
+2021/07/25 23:51:09 - Renomeando atributos.0 - Starting allocation of buffers & new threads...
+2021/07/25 23:51:09 - Renomeando atributos.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 23:51:09 - Renomeando atributos.0 - Got previous step from [Renomeando atributos] #0 --> Filter rows
+2021/07/25 23:51:09 - Renomeando atributos.0 - input rel is 1:1
+2021/07/25 23:51:09 - Renomeando atributos.0 - Found input rowset [Filter rows.0 - Renomeando atributos.0]
+2021/07/25 23:51:09 - Renomeando atributos.0 - output rel. is  1:1
+2021/07/25 23:51:09 - Renomeando atributos.0 - Found output rowset [Renomeando atributos.0 - Traducao paises.0]
+2021/07/25 23:51:09 - Renomeando atributos.0 - Finished dispatching
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o alocou um novo step: [Renomeando atributos].0
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o ir? alocar o step [Traducao paises] do tipe [ValueMapper]
+2021/07/25 23:51:09 - Traducao paises.0 - distribution de-activated
+2021/07/25 23:51:09 - Traducao paises.0 - Starting allocation of buffers & new threads...
+2021/07/25 23:51:09 - Traducao paises.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 23:51:09 - Traducao paises.0 - Got previous step from [Traducao paises] #0 --> Renomeando atributos
+2021/07/25 23:51:09 - Traducao paises.0 - input rel is 1:1
+2021/07/25 23:51:09 - Traducao paises.0 - Found input rowset [Renomeando atributos.0 - Traducao paises.0]
+2021/07/25 23:51:09 - Traducao paises.0 - output rel. is  1:1
+2021/07/25 23:51:09 - Traducao paises.0 - Found output rowset [Traducao paises.0 - Traducao continentes.0]
+2021/07/25 23:51:09 - Traducao paises.0 - Finished dispatching
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o alocou um novo step: [Traducao paises].0
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o ir? alocar o step [Trata  metricas nulas] do tipe [IfNull]
+2021/07/25 23:51:09 - Trata  metricas nulas.0 - distribution activated
+2021/07/25 23:51:09 - Trata  metricas nulas.0 - Starting allocation of buffers & new threads...
+2021/07/25 23:51:09 - Trata  metricas nulas.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 23:51:09 - Trata  metricas nulas.0 - Got previous step from [Trata  metricas nulas] #0 --> Traducao continentes
+2021/07/25 23:51:09 - Trata  metricas nulas.0 - input rel is 1:1
+2021/07/25 23:51:09 - Trata  metricas nulas.0 - Found input rowset [Traducao continentes.0 - Trata  metricas nulas.0]
+2021/07/25 23:51:09 - Trata  metricas nulas.0 - output rel. is  1:1
+2021/07/25 23:51:09 - Trata  metricas nulas.0 - Found output rowset [Trata  metricas nulas.0 - Gera SQL na stage.0]
+2021/07/25 23:51:09 - Trata  metricas nulas.0 - Finished dispatching
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o alocou um novo step: [Trata  metricas nulas].0
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o ir? alocar o step [Gera SQL na stage] do tipe [TableOutput]
+2021/07/25 23:51:09 - Gera SQL na stage.0 - distribution activated
+2021/07/25 23:51:09 - Gera SQL na stage.0 - Starting allocation of buffers & new threads...
+2021/07/25 23:51:09 - Gera SQL na stage.0 - Step info: nrinput=1 nroutput=0
+2021/07/25 23:51:09 - Gera SQL na stage.0 - Got previous step from [Gera SQL na stage] #0 --> Trata  metricas nulas
+2021/07/25 23:51:09 - Gera SQL na stage.0 - input rel is 1:1
+2021/07/25 23:51:09 - Gera SQL na stage.0 - Found input rowset [Trata  metricas nulas.0 - Gera SQL na stage.0]
+2021/07/25 23:51:09 - Gera SQL na stage.0 - Finished dispatching
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o alocou um novo step: [Gera SQL na stage].0
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o ir? alocar o step [Traducao continentes] do tipe [ValueMapper]
+2021/07/25 23:51:09 - Traducao continentes.0 - distribution activated
+2021/07/25 23:51:09 - Traducao continentes.0 - Starting allocation of buffers & new threads...
+2021/07/25 23:51:09 - Traducao continentes.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 23:51:09 - Traducao continentes.0 - Got previous step from [Traducao continentes] #0 --> Traducao paises
+2021/07/25 23:51:09 - Traducao continentes.0 - input rel is 1:1
+2021/07/25 23:51:09 - Traducao continentes.0 - Found input rowset [Traducao paises.0 - Traducao continentes.0]
+2021/07/25 23:51:09 - Traducao continentes.0 - output rel. is  1:1
+2021/07/25 23:51:09 - Traducao continentes.0 - Found output rowset [Traducao continentes.0 - Trata  metricas nulas.0]
+2021/07/25 23:51:09 - Traducao continentes.0 - Finished dispatching
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o alocou um novo step: [Traducao continentes].0
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o ir? alocar o step [Filter rows] do tipe [FilterRows]
+2021/07/25 23:51:09 - Filter rows.0 - distribution activated
+2021/07/25 23:51:09 - Filter rows.0 - Starting allocation of buffers & new threads...
+2021/07/25 23:51:09 - Filter rows.0 - Step info: nrinput=1 nroutput=1
+2021/07/25 23:51:09 - Filter rows.0 - Got previous step from [Filter rows] #0 --> Seleção de colunas a ser utilizada
+2021/07/25 23:51:09 - Filter rows.0 - input rel is 1:1
+2021/07/25 23:51:09 - Filter rows.0 - Found input rowset [Seleção de colunas a ser utilizada.0 - Filter rows.0]
+2021/07/25 23:51:09 - Filter rows.0 - output rel. is  1:1
+2021/07/25 23:51:09 - Filter rows.0 - Found output rowset [Filter rows.0 - Renomeando atributos.0]
+2021/07/25 23:51:09 - Filter rows.0 - Finished dispatching
+2021/07/25 23:51:09 - etl1_continentes -  Transforma??o alocou um novo step: [Filter rows].0
+2021/07/25 23:51:09 - etl1_continentes - Esta transforma??o pode ser repetida com a data de repeti??o : 2021/07/25 23:51:09
+2021/07/25 23:51:09 - etl1_continentes - Inicializando 8 steps...
+2021/07/25 23:51:09 - Traducao continentes.0 - Released server socket on port 0
+2021/07/25 23:51:09 - Leitura owid-covid-data.0 - Released server socket on port 0
+2021/07/25 23:51:09 - Renomeando atributos.0 - Released server socket on port 0
+2021/07/25 23:51:09 - Filter rows.0 - Released server socket on port 0
+2021/07/25 23:51:09 - Gera SQL na stage.0 - Released server socket on port 0
+2021/07/25 23:51:09 - Trata  metricas nulas.0 - Released server socket on port 0
+2021/07/25 23:51:09 - Traducao paises.0 - Released server socket on port 0
+2021/07/25 23:51:09 - Seleção de colunas a ser utilizada.0 - Released server socket on port 0
+2021/07/25 23:51:09 - projeto - New database connection defined
+2021/07/25 23:51:09 - Gera SQL na stage.0 - Connected to database [projeto] (commit=1000)
+2021/07/25 23:51:09 - projeto - Auto commit off
+2021/07/25 23:51:09 - etl1_continentes - Step [Leitura owid-covid-data.0] inicializado sem falhas.
+2021/07/25 23:51:09 - etl1_continentes - Step [Seleção de colunas a ser utilizada.0] inicializado sem falhas.
+2021/07/25 23:51:09 - etl1_continentes - Step [Renomeando atributos.0] inicializado sem falhas.
+2021/07/25 23:51:09 - etl1_continentes - Step [Traducao paises.0] inicializado sem falhas.
+2021/07/25 23:51:09 - etl1_continentes - Step [Trata  metricas nulas.0] inicializado sem falhas.
+2021/07/25 23:51:09 - etl1_continentes - Step [Gera SQL na stage.0] inicializado sem falhas.
+2021/07/25 23:51:09 - etl1_continentes - Step [Traducao continentes.0] inicializado sem falhas.
+2021/07/25 23:51:09 - etl1_continentes - Step [Filter rows.0] inicializado sem falhas.
+2021/07/25 23:51:09 - Renomeando atributos.0 - Iniciando execução...
+2021/07/25 23:51:09 - Trata  metricas nulas.0 - Iniciando execução...
+2021/07/25 23:51:09 - Traducao paises.0 - Iniciando execução...
+2021/07/25 23:51:09 - Seleção de colunas a ser utilizada.0 - Iniciando execução...
+2021/07/25 23:51:09 - Leitura owid-covid-data.0 - Iniciando execução...
+2021/07/25 23:51:09 - etl1_continentes - Transforma??o alocou 8 threads e 7 rowsets.
+2021/07/25 23:51:09 - Filter rows.0 - Iniciando execução...
+2021/07/25 23:51:09 - Traducao continentes.0 - Iniciando execução...
+2021/07/25 23:51:09 - Gera SQL na stage.0 - Iniciando execução...
+2021/07/25 23:51:09 - Leitura owid-covid-data.0 - Header row skipped in file 'C:\Projeto_BI\data\owid-covid-data.csv'
+2021/07/25 23:51:09 - Gera SQL na stage.0 - Prepared statement : INSERT INTO stg_covid.dados_gerais (nk_local, nm_continente, nm_pais, nk_data, med_total_mortes, med_novas_mortes, med_total_mortes_por_milhao, med_novas_mortes_por_milhao, med_pessoas_vacinadas, med_pessoas_totalmente_vacinadas, med_pessoas_vacinadas_por_100, med_pessoas_totalmente_vacinadas_por_cem, nr_populacao) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2021/07/25 23:51:14 - Leitura owid-covid-data.0 - Line number : 50000
+2021/07/25 23:51:14 - Seleção de colunas a ser utilizada.0 - linenr 50000
+2021/07/25 23:51:14 - Filter rows.0 - linenr 50000
+2021/07/25 23:51:14 - Renomeando atributos.0 - linenr 50000
+2021/07/25 23:51:19 - Leitura owid-covid-data.0 - Line number : 100000
+2021/07/25 23:51:19 - Seleção de colunas a ser utilizada.0 - linenr 100000
+2021/07/25 23:51:20 - Leitura owid-covid-data.0 - Finished processing (I=104804, O=0, R=0, W=104803, U=0, E=0)
+2021/07/25 23:51:20 - Seleção de colunas a ser utilizada.0 - Finished processing (I=0, O=0, R=104803, W=104803, U=0, E=0)
+2021/07/25 23:51:20 - Filter rows.0 - linenr 100000
+2021/07/25 23:51:21 - Filter rows.0 - Finished processing (I=0, O=0, R=104803, W=99264, U=0, E=0)
+2021/07/25 23:51:21 - Gera SQL na stage.0 - linenr 50000
+2021/07/25 23:51:23 - Renomeando atributos.0 - Finished processing (I=0, O=0, R=99264, W=99264, U=0, E=0)
+2021/07/25 23:51:24 - Traducao paises.0 - Finished processing (I=0, O=0, R=99264, W=99264, U=0, E=0)
+2021/07/25 23:51:26 - Traducao continentes.0 - Finished processing (I=0, O=0, R=99264, W=99264, U=0, E=0)
+2021/07/25 23:51:27 - Trata  metricas nulas.0 - Finished processing (I=0, O=0, R=99264, W=99264, U=0, E=0)
+2021/07/25 23:51:29 - projeto - Connection to database closed!
+2021/07/25 23:51:29 - Gera SQL na stage.0 - Finished processing (I=0, O=99264, R=99264, W=99264, U=0, E=0)
+2021/07/25 23:51:29 - Covid19_job - Starting entry [Success]
+2021/07/25 23:51:29 - Covid19_job - Starting entry [Job Executado com Sucesso]
+2021/07/25 23:51:29 - Covid19_job - Finished job entry [Job Executado com Sucesso] (result=[true])
+2021/07/25 23:51:29 - Covid19_job - Finished job entry [Success] (result=[true])
+2021/07/25 23:51:29 - Covid19_job - Finished job entry [Step 1 - ETL e Criacao da Stage] (result=[true])
+2021/07/25 23:51:29 - Covid19_job - Finished job entry [Step 0 - Get CSV] (result=[true])
+2021/07/25 23:51:29 - Covid19_job - Job execution finished
+2021/07/25 23:51:29 - Kitchen - Finished!
+2021/07/25 23:51:29 - Kitchen - Start=2021/07/25 23:50:44.244, Stop=2021/07/25 23:51:29.715
+2021/07/25 23:51:29 - Kitchen - Processing ended after 45 seconds.
+ 
+ 
+DEBUG: Using JAVA_HOME
+DEBUG: _PENTAHO_JAVA_HOME=C:\Program Files\Java\jre1.8.0_291
+DEBUG: _PENTAHO_JAVA=C:\Program Files\Java\jre1.8.0_291\bin\java.exe
+
+C:\Pentaho\data-integration>"C:\Program Files\Java\jre1.8.0_291\bin\java.exe"  "-Xms1024m" "-Xmx2048m" "-XX:MaxPermSize=256m" "-Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2" "-Djava.library.path=libswt\win64" "-DKETTLE_HOME=" "-DKETTLE_REPOSITORY=" "-DKETTLE_USER=" "-DKETTLE_PASSWORD=" "-DKETTLE_PLUGIN_PACKAGES=" "-DKETTLE_LOG_SIZE_LIMIT=" "-DKETTLE_JNDI_ROOT=" -jar launcher\pentaho-application-launcher-7.1.0.0-12.jar -lib ..\libswt\win64  -main org.pentaho.di.kitchen.Kitchen -initialDir "C:\WINDOWS\system32"\ /file:"C:\Projeto_BI\ktr\Covid19_job.kjb" /level:Basic 
+09:44:25,669 INFO  [KarafBoot] Checking to see if org.pentaho.clean.karaf.cache is enabled
+09:44:34,026 INFO  [KarafInstance] 
+*******************************************************************************
+*** Karaf Instance Number: 2 at C:\Pentaho\data-integration\.\system\karaf\ ***
+***   caches\kitchen\data-1                                                 ***
+*** FastBin Provider Port:52902                                             ***
+*** Karaf Port:8803                                                         ***
+*** OSGI Service Port:9052                                                  ***
+*******************************************************************************
+2021/07/31 09:44:59 - Kitchen - Logging is at level : Log básico
+2021/07/31 09:44:59 - Kitchen - Start of run.
+2021/07/31 09:45:16 - Covid19_job - Início da execução do job
+2021/07/31 09:45:16 - Covid19_job - Starting entry [Step 0 - Get CSV]
+2021/07/31 09:45:16 - Step 0 - Get CSV - Loading transformation from XML file [file:///C:/Projeto_BI/ktr/00_Extracao_CSV_Github.ktr]
+2021/07/31 09:45:16 - Step 0 - Get CSV - Using run configuration [Pentaho local]
+2021/07/31 09:45:16 - Step 0 - Get CSV - Using legacy execution engine
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Expedindo in?cio para transforma??o [00Extracao_CSV_Github]
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Nr de argumentos detectados:0 
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Esta n?o ? uma repeti??o de transforma??o
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Foram encotrados 4 steps diferentes para executar.
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Alocando rowsets...
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Alocando rowsets para o step 0 --> HTTP Client
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Transforma??o alocou novo rowset [HTTP Client.0 - Text file output.0]
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Foram alocados 1 rowsets por step 0 --> HTTP Client  
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Alocando rowsets para o step 1 --> Text file output
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Transforma??o alocou novo rowset [Text file output.0 - Block this step until steps finish.0]
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Foram alocados 2 rowsets por step 1 --> Text file output  
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Alocando rowsets para o step 2 --> Block this step until steps finish
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Foram alocados 2 rowsets por step 2 --> Block this step until steps finish  
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Alocando rowsets para o step 3 --> Dummy de entrada (WORKAROUND)
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Transforma??o alocou novo rowset [Dummy de entrada (WORKAROUND).0 - HTTP Client.0]
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Foram alocados 3 rowsets por step 3 --> Dummy de entrada (WORKAROUND)  
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Alocando Steps & StepData...
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [HTTP Client] do tipe [HTTP]
+2021/07/31 09:45:16 - HTTP Client.0 - distribution activated
+2021/07/31 09:45:16 - HTTP Client.0 - Starting allocation of buffers & new threads...
+2021/07/31 09:45:16 - HTTP Client.0 - Step info: nrinput=1 nroutput=1
+2021/07/31 09:45:16 - HTTP Client.0 - Got previous step from [HTTP Client] #0 --> Dummy de entrada (WORKAROUND)
+2021/07/31 09:45:16 - HTTP Client.0 - input rel is 1:1
+2021/07/31 09:45:16 - HTTP Client.0 - Found input rowset [Dummy de entrada (WORKAROUND).0 - HTTP Client.0]
+2021/07/31 09:45:16 - HTTP Client.0 - output rel. is  1:1
+2021/07/31 09:45:16 - HTTP Client.0 - Found output rowset [HTTP Client.0 - Text file output.0]
+2021/07/31 09:45:16 - HTTP Client.0 - Finished dispatching
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [HTTP Client].0
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [Text file output] do tipe [TextFileOutput]
+2021/07/31 09:45:16 - Text file output.0 - distribution activated
+2021/07/31 09:45:16 - Text file output.0 - Starting allocation of buffers & new threads...
+2021/07/31 09:45:16 - Text file output.0 - Step info: nrinput=1 nroutput=1
+2021/07/31 09:45:16 - Text file output.0 - Got previous step from [Text file output] #0 --> HTTP Client
+2021/07/31 09:45:16 - Text file output.0 - input rel is 1:1
+2021/07/31 09:45:16 - Text file output.0 - Found input rowset [HTTP Client.0 - Text file output.0]
+2021/07/31 09:45:16 - Text file output.0 - output rel. is  1:1
+2021/07/31 09:45:16 - Text file output.0 - Found output rowset [Text file output.0 - Block this step until steps finish.0]
+2021/07/31 09:45:16 - Text file output.0 - Finished dispatching
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [Text file output].0
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [Block this step until steps finish] do tipe [BlockUntilStepsFinish]
+2021/07/31 09:45:16 - Block this step until steps finish.0 - distribution activated
+2021/07/31 09:45:16 - Block this step until steps finish.0 - Starting allocation of buffers & new threads...
+2021/07/31 09:45:16 - Block this step until steps finish.0 - Step info: nrinput=1 nroutput=0
+2021/07/31 09:45:16 - Block this step until steps finish.0 - Got previous step from [Block this step until steps finish] #0 --> Text file output
+2021/07/31 09:45:16 - Block this step until steps finish.0 - input rel is 1:1
+2021/07/31 09:45:16 - Block this step until steps finish.0 - Found input rowset [Text file output.0 - Block this step until steps finish.0]
+2021/07/31 09:45:16 - Block this step until steps finish.0 - Finished dispatching
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [Block this step until steps finish].0
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Transforma??o ir? alocar o step [Dummy de entrada (WORKAROUND)] do tipe [DataGrid]
+2021/07/31 09:45:16 - Dummy de entrada (WORKAROUND).0 - distribution activated
+2021/07/31 09:45:16 - Dummy de entrada (WORKAROUND).0 - Starting allocation of buffers & new threads...
+2021/07/31 09:45:16 - Dummy de entrada (WORKAROUND).0 - Step info: nrinput=0 nroutput=1
+2021/07/31 09:45:16 - Dummy de entrada (WORKAROUND).0 - output rel. is  1:1
+2021/07/31 09:45:16 - Dummy de entrada (WORKAROUND).0 - Found output rowset [Dummy de entrada (WORKAROUND).0 - HTTP Client.0]
+2021/07/31 09:45:16 - Dummy de entrada (WORKAROUND).0 - Finished dispatching
+2021/07/31 09:45:16 - 00Extracao_CSV_Github -  Transforma??o alocou um novo step: [Dummy de entrada (WORKAROUND)].0
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Esta transforma??o pode ser repetida com a data de repeti??o : 2021/07/31 09:45:16
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Inicializando 4 steps...
+2021/07/31 09:45:16 - HTTP Client.0 - Released server socket on port 0
+2021/07/31 09:45:16 - Dummy de entrada (WORKAROUND).0 - Released server socket on port 0
+2021/07/31 09:45:16 - Text file output.0 - Released server socket on port 0
+2021/07/31 09:45:16 - Block this step until steps finish.0 - Released server socket on port 0
+2021/07/31 09:45:16 - Text file output.0 - Parent folder exists [file:///C:/Projeto_BI/stage]!
+2021/07/31 09:45:16 - Text file output.0 - Opening output stream using provider: None
+2021/07/31 09:45:16 - Text file output.0 - Opening output stream in encoding: UTF-8
+2021/07/31 09:45:16 - Text file output.0 - Opened new file with name [file:///C:/Projeto_BI/stage/owid-covid-data.csv]
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Step [HTTP Client.0] inicializado sem falhas.
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Step [Text file output.0] inicializado sem falhas.
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Step [Block this step until steps finish.0] inicializado sem falhas.
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Step [Dummy de entrada (WORKAROUND).0] inicializado sem falhas.
+2021/07/31 09:45:16 - HTTP Client.0 - Iniciando execução...
+2021/07/31 09:45:16 - Text file output.0 - Iniciando execução...
+2021/07/31 09:45:16 - Block this step until steps finish.0 - Iniciando execução...
+2021/07/31 09:45:16 - Dummy de entrada (WORKAROUND).0 - Iniciando execução...
+2021/07/31 09:45:16 - 00Extracao_CSV_Github - Transforma??o alocou 4 threads e 3 rowsets.
+2021/07/31 09:45:16 - Dummy de entrada (WORKAROUND).0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2021/07/31 09:45:16 - HTTP Client.0 - Connecting to : [https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv]
+2021/07/31 09:45:18 - HTTP Client.0 - Response time (milliseconds): [2149] for [https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv]
+2021/07/31 09:45:22 - HTTP Client.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2021/07/31 09:45:22 - Text file output.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2021/07/31 09:45:22 - Block this step until steps finish.0 - Finished running step [Text file output(0)].
+2021/07/31 09:45:22 - Block this step until steps finish.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2021/07/31 09:45:22 - Covid19_job - Starting entry [Step 1 - ETL e Criacao da Stage]
+2021/07/31 09:45:22 - Step 1 - ETL e Criacao da Stage - Loading transformation from XML file [file:///C:/Projeto_BI/ktr/01_etl1.ktr]
+2021/07/31 09:45:22 - Step 1 - ETL e Criacao da Stage - Using run configuration [Pentaho local]
+2021/07/31 09:45:22 - Step 1 - ETL e Criacao da Stage - Using legacy execution engine
+2021/07/31 09:45:22 - etl1_continentes - Expedindo in?cio para transforma??o [etl1_continentes]
+2021/07/31 09:45:22 - etl1_continentes - Nr de argumentos detectados:0 
+2021/07/31 09:45:22 - etl1_continentes - Esta n?o ? uma repeti??o de transforma??o
+2021/07/31 09:45:22 - etl1_continentes - Foram encotrados 8 steps diferentes para executar.
+2021/07/31 09:45:22 - etl1_continentes - Alocando rowsets...
+2021/07/31 09:45:22 - etl1_continentes -  Alocando rowsets para o step 0 --> Leitura owid-covid-data
+2021/07/31 09:45:22 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/31 09:45:22 - etl1_continentes - Transforma??o alocou novo rowset [Leitura owid-covid-data.0 - Seleção de colunas a ser utilizada.0]
+2021/07/31 09:45:22 - etl1_continentes -  Foram alocados 1 rowsets por step 0 --> Leitura owid-covid-data  
+2021/07/31 09:45:22 - etl1_continentes -  Alocando rowsets para o step 1 --> Seleção de colunas a ser utilizada
+2021/07/31 09:45:22 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/31 09:45:22 - etl1_continentes - Transforma??o alocou novo rowset [Seleção de colunas a ser utilizada.0 - Filter rows.0]
+2021/07/31 09:45:22 - etl1_continentes -  Foram alocados 2 rowsets por step 1 --> Seleção de colunas a ser utilizada  
+2021/07/31 09:45:22 - etl1_continentes -  Alocando rowsets para o step 2 --> Renomeando atributos
+2021/07/31 09:45:22 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/31 09:45:22 - etl1_continentes - Transforma??o alocou novo rowset [Renomeando atributos.0 - Traducao paises.0]
+2021/07/31 09:45:22 - etl1_continentes -  Foram alocados 3 rowsets por step 2 --> Renomeando atributos  
+2021/07/31 09:45:22 - etl1_continentes -  Alocando rowsets para o step 3 --> Traducao paises
+2021/07/31 09:45:22 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/31 09:45:22 - etl1_continentes - Transforma??o alocou novo rowset [Traducao paises.0 - Traducao continentes.0]
+2021/07/31 09:45:22 - etl1_continentes -  Foram alocados 4 rowsets por step 3 --> Traducao paises  
+2021/07/31 09:45:22 - etl1_continentes -  Alocando rowsets para o step 4 --> Trata  metricas nulas
+2021/07/31 09:45:22 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/31 09:45:22 - etl1_continentes - Transforma??o alocou novo rowset [Trata  metricas nulas.0 - Gera SQL na stage.0]
+2021/07/31 09:45:22 - etl1_continentes -  Foram alocados 5 rowsets por step 4 --> Trata  metricas nulas  
+2021/07/31 09:45:22 - etl1_continentes -  Alocando rowsets para o step 5 --> Gera SQL na stage
+2021/07/31 09:45:22 - etl1_continentes -  Foram alocados 5 rowsets por step 5 --> Gera SQL na stage  
+2021/07/31 09:45:22 - etl1_continentes -  Alocando rowsets para o step 6 --> Traducao continentes
+2021/07/31 09:45:22 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/31 09:45:22 - etl1_continentes - Transforma??o alocou novo rowset [Traducao continentes.0 - Trata  metricas nulas.0]
+2021/07/31 09:45:22 - etl1_continentes -  Foram alocados 6 rowsets por step 6 --> Traducao continentes  
+2021/07/31 09:45:22 - etl1_continentes -  Alocando rowsets para o step 7 --> Filter rows
+2021/07/31 09:45:22 - etl1_continentes -   c?pias pr?vias = 1, pr?ximas c?pias=1
+2021/07/31 09:45:22 - etl1_continentes - Transforma??o alocou novo rowset [Filter rows.0 - Renomeando atributos.0]
+2021/07/31 09:45:22 - etl1_continentes -  Foram alocados 7 rowsets por step 7 --> Filter rows  
+2021/07/31 09:45:22 - etl1_continentes - Alocando Steps & StepData...
+2021/07/31 09:45:22 - etl1_continentes -  Transforma??o ir? alocar o step [Leitura owid-covid-data] do tipe [CsvInput]
+2021/07/31 09:45:22 - Leitura owid-covid-data.0 - distribution activated
+2021/07/31 09:45:22 - Leitura owid-covid-data.0 - Starting allocation of buffers & new threads...
+2021/07/31 09:45:22 - Leitura owid-covid-data.0 - Step info: nrinput=0 nroutput=1
+2021/07/31 09:45:22 - Leitura owid-covid-data.0 - output rel. is  1:1
+2021/07/31 09:45:22 - Leitura owid-covid-data.0 - Found output rowset [Leitura owid-covid-data.0 - Seleção de colunas a ser utilizada.0]
+2021/07/31 09:45:22 - Leitura owid-covid-data.0 - Finished dispatching
+2021/07/31 09:45:22 - etl1_continentes -  Transforma??o alocou um novo step: [Leitura owid-covid-data].0
+2021/07/31 09:45:22 - etl1_continentes -  Transforma??o ir? alocar o step [Seleção de colunas a ser utilizada] do tipe [SelectValues]
+2021/07/31 09:45:22 - Seleção de colunas a ser utilizada.0 - distribution activated
+2021/07/31 09:45:22 - Seleção de colunas a ser utilizada.0 - Starting allocation of buffers & new threads...
+2021/07/31 09:45:22 - Seleção de colunas a ser utilizada.0 - Step info: nrinput=1 nroutput=1
+2021/07/31 09:45:22 - Seleção de colunas a ser utilizada.0 - Got previous step from [Seleção de colunas a ser utilizada] #0 --> Leitura owid-covid-data
+2021/07/31 09:45:22 - Seleção de colunas a ser utilizada.0 - input rel is 1:1
+2021/07/31 09:45:22 - Seleção de colunas a ser utilizada.0 - Found input rowset [Leitura owid-covid-data.0 - Seleção de colunas a ser utilizada.0]
+2021/07/31 09:45:22 - Seleção de colunas a ser utilizada.0 - output rel. is  1:1
+2021/07/31 09:45:22 - Seleção de colunas a ser utilizada.0 - Found output rowset [Seleção de colunas a ser utilizada.0 - Filter rows.0]
+2021/07/31 09:45:22 - Seleção de colunas a ser utilizada.0 - Finished dispatching
+2021/07/31 09:45:22 - etl1_continentes -  Transforma??o alocou um novo step: [Seleção de colunas a ser utilizada].0
+2021/07/31 09:45:22 - etl1_continentes -  Transforma??o ir? alocar o step [Renomeando atributos] do tipe [SelectValues]
+2021/07/31 09:45:22 - Renomeando atributos.0 - distribution activated
+2021/07/31 09:45:22 - Renomeando atributos.0 - Starting allocation of buffers & new threads...
+2021/07/31 09:45:22 - Renomeando atributos.0 - Step info: nrinput=1 nroutput=1
+2021/07/31 09:45:22 - Renomeando atributos.0 - Got previous step from [Renomeando atributos] #0 --> Filter rows
+2021/07/31 09:45:22 - Renomeando atributos.0 - input rel is 1:1
+2021/07/31 09:45:22 - Renomeando atributos.0 - Found input rowset [Filter rows.0 - Renomeando atributos.0]
+2021/07/31 09:45:22 - Renomeando atributos.0 - output rel. is  1:1
+2021/07/31 09:45:22 - Renomeando atributos.0 - Found output rowset [Renomeando atributos.0 - Traducao paises.0]
+2021/07/31 09:45:22 - Renomeando atributos.0 - Finished dispatching
+2021/07/31 09:45:22 - etl1_continentes -  Transforma??o alocou um novo step: [Renomeando atributos].0
+2021/07/31 09:45:22 - etl1_continentes -  Transforma??o ir? alocar o step [Traducao paises] do tipe [ValueMapper]
+2021/07/31 09:45:22 - Traducao paises.0 - distribution de-activated
+2021/07/31 09:45:22 - Traducao paises.0 - Starting allocation of buffers & new threads...
+2021/07/31 09:45:22 - Traducao paises.0 - Step info: nrinput=1 nroutput=1
+2021/07/31 09:45:22 - Traducao paises.0 - Got previous step from [Traducao paises] #0 --> Renomeando atributos
+2021/07/31 09:45:22 - Traducao paises.0 - input rel is 1:1
+2021/07/31 09:45:22 - Traducao paises.0 - Found input rowset [Renomeando atributos.0 - Traducao paises.0]
+2021/07/31 09:45:22 - Traducao paises.0 - output rel. is  1:1
+2021/07/31 09:45:22 - Traducao paises.0 - Found output rowset [Traducao paises.0 - Traducao continentes.0]
+2021/07/31 09:45:22 - Traducao paises.0 - Finished dispatching
+2021/07/31 09:45:22 - etl1_continentes -  Transforma??o alocou um novo step: [Traducao paises].0
+2021/07/31 09:45:22 - etl1_continentes -  Transforma??o ir? alocar o step [Trata  metricas nulas] do tipe [IfNull]
+2021/07/31 09:45:22 - Trata  metricas nulas.0 - distribution activated
+2021/07/31 09:45:23 - Trata  metricas nulas.0 - Starting allocation of buffers & new threads...
+2021/07/31 09:45:23 - Trata  metricas nulas.0 - Step info: nrinput=1 nroutput=1
+2021/07/31 09:45:23 - Trata  metricas nulas.0 - Got previous step from [Trata  metricas nulas] #0 --> Traducao continentes
+2021/07/31 09:45:23 - Trata  metricas nulas.0 - input rel is 1:1
+2021/07/31 09:45:23 - Trata  metricas nulas.0 - Found input rowset [Traducao continentes.0 - Trata  metricas nulas.0]
+2021/07/31 09:45:23 - Trata  metricas nulas.0 - output rel. is  1:1
+2021/07/31 09:45:23 - Trata  metricas nulas.0 - Found output rowset [Trata  metricas nulas.0 - Gera SQL na stage.0]
+2021/07/31 09:45:23 - Trata  metricas nulas.0 - Finished dispatching
+2021/07/31 09:45:23 - etl1_continentes -  Transforma??o alocou um novo step: [Trata  metricas nulas].0
+2021/07/31 09:45:23 - etl1_continentes -  Transforma??o ir? alocar o step [Gera SQL na stage] do tipe [TableOutput]
+2021/07/31 09:45:23 - Gera SQL na stage.0 - distribution activated
+2021/07/31 09:45:23 - Gera SQL na stage.0 - Starting allocation of buffers & new threads...
+2021/07/31 09:45:23 - Gera SQL na stage.0 - Step info: nrinput=1 nroutput=0
+2021/07/31 09:45:23 - Gera SQL na stage.0 - Got previous step from [Gera SQL na stage] #0 --> Trata  metricas nulas
+2021/07/31 09:45:23 - Gera SQL na stage.0 - input rel is 1:1
+2021/07/31 09:45:23 - Gera SQL na stage.0 - Found input rowset [Trata  metricas nulas.0 - Gera SQL na stage.0]
+2021/07/31 09:45:23 - Gera SQL na stage.0 - Finished dispatching
+2021/07/31 09:45:23 - etl1_continentes -  Transforma??o alocou um novo step: [Gera SQL na stage].0
+2021/07/31 09:45:23 - etl1_continentes -  Transforma??o ir? alocar o step [Traducao continentes] do tipe [ValueMapper]
+2021/07/31 09:45:23 - Traducao continentes.0 - distribution activated
+2021/07/31 09:45:23 - Traducao continentes.0 - Starting allocation of buffers & new threads...
+2021/07/31 09:45:23 - Traducao continentes.0 - Step info: nrinput=1 nroutput=1
+2021/07/31 09:45:23 - Traducao continentes.0 - Got previous step from [Traducao continentes] #0 --> Traducao paises
+2021/07/31 09:45:23 - Traducao continentes.0 - input rel is 1:1
+2021/07/31 09:45:23 - Traducao continentes.0 - Found input rowset [Traducao paises.0 - Traducao continentes.0]
+2021/07/31 09:45:23 - Traducao continentes.0 - output rel. is  1:1
+2021/07/31 09:45:23 - Traducao continentes.0 - Found output rowset [Traducao continentes.0 - Trata  metricas nulas.0]
+2021/07/31 09:45:23 - Traducao continentes.0 - Finished dispatching
+2021/07/31 09:45:23 - etl1_continentes -  Transforma??o alocou um novo step: [Traducao continentes].0
+2021/07/31 09:45:23 - etl1_continentes -  Transforma??o ir? alocar o step [Filter rows] do tipe [FilterRows]
+2021/07/31 09:45:23 - Filter rows.0 - distribution activated
+2021/07/31 09:45:23 - Filter rows.0 - Starting allocation of buffers & new threads...
+2021/07/31 09:45:23 - Filter rows.0 - Step info: nrinput=1 nroutput=1
+2021/07/31 09:45:23 - Filter rows.0 - Got previous step from [Filter rows] #0 --> Seleção de colunas a ser utilizada
+2021/07/31 09:45:23 - Filter rows.0 - input rel is 1:1
+2021/07/31 09:45:23 - Filter rows.0 - Found input rowset [Seleção de colunas a ser utilizada.0 - Filter rows.0]
+2021/07/31 09:45:23 - Filter rows.0 - output rel. is  1:1
+2021/07/31 09:45:23 - Filter rows.0 - Found output rowset [Filter rows.0 - Renomeando atributos.0]
+2021/07/31 09:45:23 - Filter rows.0 - Finished dispatching
+2021/07/31 09:45:23 - etl1_continentes -  Transforma??o alocou um novo step: [Filter rows].0
+2021/07/31 09:45:23 - etl1_continentes - Esta transforma??o pode ser repetida com a data de repeti??o : 2021/07/31 09:45:23
+2021/07/31 09:45:23 - etl1_continentes - Inicializando 8 steps...
+2021/07/31 09:45:23 - Leitura owid-covid-data.0 - Released server socket on port 0
+2021/07/31 09:45:23 - Seleção de colunas a ser utilizada.0 - Released server socket on port 0
+2021/07/31 09:45:23 - Filter rows.0 - Released server socket on port 0
+2021/07/31 09:45:23 - Gera SQL na stage.0 - Released server socket on port 0
+2021/07/31 09:45:23 - Trata  metricas nulas.0 - Released server socket on port 0
+2021/07/31 09:45:23 - Traducao continentes.0 - Released server socket on port 0
+2021/07/31 09:45:23 - Renomeando atributos.0 - Released server socket on port 0
+2021/07/31 09:45:23 - Traducao paises.0 - Released server socket on port 0
+2021/07/31 09:45:23 - projeto - New database connection defined
+2021/07/31 09:45:23 - Gera SQL na stage.0 - Connected to database [projeto] (commit=1000)
+2021/07/31 09:45:23 - projeto - Auto commit off
+2021/07/31 09:45:23 - etl1_continentes - Step [Leitura owid-covid-data.0] inicializado sem falhas.
+2021/07/31 09:45:23 - etl1_continentes - Step [Seleção de colunas a ser utilizada.0] inicializado sem falhas.
+2021/07/31 09:45:23 - etl1_continentes - Step [Renomeando atributos.0] inicializado sem falhas.
+2021/07/31 09:45:23 - etl1_continentes - Step [Traducao paises.0] inicializado sem falhas.
+2021/07/31 09:45:23 - etl1_continentes - Step [Trata  metricas nulas.0] inicializado sem falhas.
+2021/07/31 09:45:23 - etl1_continentes - Step [Gera SQL na stage.0] inicializado sem falhas.
+2021/07/31 09:45:23 - etl1_continentes - Step [Traducao continentes.0] inicializado sem falhas.
+2021/07/31 09:45:23 - etl1_continentes - Step [Filter rows.0] inicializado sem falhas.
+2021/07/31 09:45:23 - Leitura owid-covid-data.0 - Iniciando execução...
+2021/07/31 09:45:23 - Renomeando atributos.0 - Iniciando execução...
+2021/07/31 09:45:23 - Seleção de colunas a ser utilizada.0 - Iniciando execução...
+2021/07/31 09:45:23 - Trata  metricas nulas.0 - Iniciando execução...
+2021/07/31 09:45:23 - Traducao paises.0 - Iniciando execução...
+2021/07/31 09:45:23 - Gera SQL na stage.0 - Iniciando execução...
+2021/07/31 09:45:23 - Traducao continentes.0 - Iniciando execução...
+2021/07/31 09:45:23 - etl1_continentes - Transforma??o alocou 8 threads e 7 rowsets.
+2021/07/31 09:45:23 - Filter rows.0 - Iniciando execução...
+child index = 0, logging object : org.pentaho.di.core.logging.LoggingObject@62f6544f parent=9466c22f-3b49-4f65-9ea6-d4547f4673d3
+2021/07/31 09:45:23 - Seleção de colunas a ser utilizada.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2021/07/31 09:45:23 - Traducao continentes.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2021/07/31 09:45:23 - Leitura owid-covid-data.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2021/07/31 09:45:23 - Filter rows.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2021/07/31 09:45:23 - etl1_continentes - Transforma??o detectada 
+2021/07/31 09:45:23 - Trata  metricas nulas.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2021/07/31 09:45:23 - Traducao paises.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2021/07/31 09:45:23 - Renomeando atributos.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2021/07/31 09:45:23 - etl1_continentes - Transforma??o est? matando os outros steps!
+2021/07/31 09:45:23 - projeto - Connection to database closed!
+2021/07/31 09:45:23 - Gera SQL na stage.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2021/07/31 09:45:23 - Covid19_job - Starting entry [Envia email de erro - Step 1]
+2021/07/31 09:45:23 - Envia email de erro - Step 1 - Added file '///C:/Projeto_BI/logs/covid19.log' to the mail message.
+2021/07/31 09:45:23 - Covid19_job - Finished job entry [Envia email de erro - Step 1] (result=[false])
+2021/07/31 09:45:23 - Covid19_job - Finished job entry [Step 1 - ETL e Criacao da Stage] (result=[false])
+2021/07/31 09:45:23 - Covid19_job - Finished job entry [Step 0 - Get CSV] (result=[false])
+2021/07/31 09:45:23 - Covid19_job - Job execution finished
+2021/07/31 09:45:23 - Kitchen - Finished!
+2021/07/31 09:45:23 - Kitchen - Start=2021/07/31 09:44:59.706, Stop=2021/07/31 09:45:23.841
+2021/07/31 09:45:23 - Kitchen - Processing ended after 24 seconds.

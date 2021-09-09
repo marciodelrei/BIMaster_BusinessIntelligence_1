@@ -1,0 +1,70 @@
+Estrutura dos arquivos do projeto:
+C:\Projeto_BI
+	|   
+	+---anexos
+	|   |   README.txt
+	|   |   
+	|   +---dicionario_dados_stage_owid
+	|   |       dicionario_dados.pdf
+	|   |       owid-covid-data_TEMPLATE.csv
+	|   |       
+	|   +---modelo_dimensional
+	|   |       Modelo_dimensional.architect
+	|   |       
+	|   +---schedule_windows
+	|   |       ProjetoBI_COVID19 (TaskWindows).xml
+	|   |       
+	|   \---script_bd
+	|           dw_covid19.sql
+	|           
+	+---bi
+	|       projeto_covid19.pbix
+	|       
+	+---ktr
+	|       00_Extracao_CSV_Github.ktr
+	|       01_ETL1_Pre_DW.ktr
+	|       02_Carga_DW.ktr
+	|       Covid19_job.kjb
+	|       job.bat
+	|       log.txt
+	|       
+	+---logs
+	|       covid19.log
+	|       
+	\---stage
+			owid-covid-data.csv
+C:\Projeto_BI
+	|   
+	+---anexos
+	|   |   README.txt
+	|   |   
+	|   +---dicionario_dados_stage_owid
+	|   |       dicionario_dados.pdf
+	|   |       owid-covid-data_TEMPLATE.csv
+	|   |       
+	|   +---modelo_dimensional
+	|   |       Modelo_dimensional.architect
+	|   |       
+	|   +---schedule_windows
+	|   |       ProjetoBI_COVID19 (TaskWindows).xml
+	|   |       
+	|   \---script_bd
+	|           dw_covid19.sql
+	|           
+	+---bi
+	|       projeto_covid19.pbix
+	|       
+	+---ktr
+	|       00_Extracao_CSV_Github.ktr
+	|       01_ETL1_Pre_DW.ktr
+	|       02_Carga_DW.ktr
+	|       Covid19_job.kjb
+	|       job.bat
+	|       log.txt
+	|       
+	+---logs
+	|       covid19.log
+	|       
+	\---stage
+			owid-covid-data.csv
+        
