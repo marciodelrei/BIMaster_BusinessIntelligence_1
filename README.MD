@@ -109,7 +109,7 @@
 
 <h2 id="projeto">
   
-[Projeto_BI(https://github.com/marciodelrei/BIMaster_BusinessIntelligence/tree/main/Projeto_BI_1)
+[Projeto_BI](https://github.com/marciodelrei/BIMaster_BusinessIntelligence/tree/main/Projeto_BI_1)
   
 </h2>
 
